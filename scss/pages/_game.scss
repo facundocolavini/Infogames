@@ -5,24 +5,426 @@
 @import 'components/buttons';
 
 @include media-up(xs){
+    .points{
+        margin:map-get($spacers,4)  map-get($spacers,4);
+
+        font-size:$font-size-base-sm;
+        max-width: 1300px;
+        @include dislayPosition(f,center,center);
+        .points__img{
+            text-align: center;
+            width: 25em;
+            max-height: auto;
+            object-fit: cover;
+            img{
+                @include dislayPosition(f,center,center);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: $box-shadow-1;
+                border-radius: 1em;
+
+            }
+        }
+        .points__score{
+            background-color: map-get($grays ,2);
+            box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+            border-radius: 1em;
+            width: 100%;
+        }
+        .points__header{
+            font: {
+                family: $family-title;
+            }
+            padding:map-get($spacers,4) 0 map-get($spacers,3) 0;
+            white-space: nowrap;
+            letter-spacing: .1em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        
+        }
+        .points__title{
+            font-size: 1.3em;
+            font-weight: 600;
+            text-align: center;
+        }
+        .points__rating{
+            border-radius: 1em;
+            border:none;
+
+          
+        }
+        .points__item{
+            text-align: center;
+            padding:map-get($spacers,2)  map-get($spacers,3);
+        }
+        .points__item--start{
+            @include dislayPosition(f,center,center);
+            text-align: center;
+            border-left: none;
+        }
+        .points__rating__img--start {
+            margin: 0 map-get($spacers,3) ;
+            height: 2.2em;
+            width: 2.2em;
+            filter:$shadow-drop-2;
+            background-color:$box-shadow-6;
+        }
+        .points__rating__content{
+            padding: 0 map-get($spacers,3 );
+            &--total{
+                @include dislayPosition(ib,n,n);
+                font-size: 2em;
+                font-weight: 600;
+            }
+            &--min{
+                @include dislayPosition(ib,n,n);
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        }
+
+        .points__area{
+         
+            font: {
+                family: $family-text;
+                size: .9em;
+                weight: 600;
+            }
+            color:map-get($colors,"white" );
+            letter-spacing: .1rem;
+            white-space: nowrap;
+        }
+        .points__number{
+            font-size: 1.5em;
+            font-weight:600;
+            text-align: center;
+        }
+        .points__text{
+            padding: 0 map-get($spacers,3 );
+            text-align: center;
+            font: {
+                family: $family-text;
+                size: 1em;
+                weight: 300;
+            }
+            color:map-get($whites,3);
+        }
+        .points__item--btns{
+      
+            @include dislayPosition(f,s-b,center);
+            width: 100%;
+      
+            .points__btn--gameplay{
+                @include genericBtn(map-get($colors, "red"));
+             
+                width: 100%;
+        
+                &:hover{
+                    @include hoverBtns($box-shadow-3);
+                }
+
+            }
+            .poinst__icon:hover{
+                @include hoverIcons($filter-1);
+            }
+            .points__icon{
+                height: 1.2em;
+                width: 1.2em;
+                margin-right: map-get($spacers,1 );
+            
+            }
+            .points__btn--buy{
+          
+                @include genericBtn(map-get($colors, "orange"));
+                
+                width: 100%;
+                &:hover{
+                    @include hoverBtns($box-shadow-7);
+                }
+            }
+        }
+
+    }
+
+}
+
+@include media-up(sm){
+    .points{
+        margin:map-get($spacers,6)  map-get($spacers,6);
+
+        font-size:$font-size-base-sm;
+        max-width: 1300px;
+        @include dislayPosition(f,center,center);
+        .points__img{
+            text-align: center;
+            width: 25em;
+            max-height: auto;
+            object-fit: cover;
+            img{
+                @include dislayPosition(f,center,center);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: $box-shadow-1;
+                border-radius: 1em;
+
+            }
+        }
+        .points__score{
+            background-color: map-get($grays ,2);
+            box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+            border-radius: 1em;
+            width: 100%;
+        }
+        .points__header{
+            font: {
+                family: $family-title;
+            }
+            padding:map-get($spacers,4)  map-get($spacers,4);
+            white-space: nowrap;
+            letter-spacing: .1em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        
+        }
+        .points__title{
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: left;
+        }
+        .points__rating{
+            border-radius: 1em;
+            border:none;
+        }
+        .points__item{
+            text-align: center;
+            padding:map-get($spacers,2)  map-get($spacers,4);
+        }
+        .points__item--start{
+            @include dislayPosition(f,center,center);
+            text-align: center;
+            border-left: none;
+        }
+        .points__rating__img--start {
+            margin: 0 map-get($spacers,3) ;
+            height: 2.5em;
+            width: 2.5em;
+            filter:$shadow-drop-2;
+            background-color:$box-shadow-6;
+        }
+        .points__rating__content{
+            &--total{
+                @include dislayPosition(ib,n,n);
+                font-size: 2em;
+                font-weight: 600;
+            }
+            &--min{
+                @include dislayPosition(ib,n,n);
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        }
+
+        .points__area{
+            font: {
+                family: $family-text;
+                size: 1.2em;
+                weight: 600;
+            }
+            color:map-get($colors,"white" );
+            letter-spacing: .1rem;
+            white-space: nowrap;
+        }
+        .points__number{
+            font-size: 1.5em;
+            font-weight:600;
+        }
+        .points__text{
+            text-align: left;
+            font: {
+                family: $family-text;
+                size: 1.3em;
+                weight: 300;
+            }
+            color:map-get($whites,3);
+        }
+        .points__item--btns{
+            @include dislayPosition(f,s-b,center);
+            .points__btn--gameplay{
+                @include genericBtn(map-get($colors, "red"));
+        
+                &:hover{
+                    @include hoverBtns($box-shadow-3);
+                }
+
+            }
+            .poinst__icon:hover{
+                @include hoverIcons($filter-1);
+            }
+            .points__icon{
+                height: 1.2em;
+                width: 1.2em;
+                margin-right: map-get($spacers,1 );
+            
+            }
+            .points__btn--buy{
+                @include genericBtn(map-get($colors, "orange"));
+                &:hover{
+                    @include hoverBtns($box-shadow-7);
+                }
+            }
+        }
+
+    }
+
 
 
 }
-@include media-up(sm){}
 @include media-up(md){
+    .points{
+        margin:map-get($spacers,6)  map-get($spacers,6);
+        font-size:$font-size-base;
+        @include dislayPosition(f,center,center);
+        .points__img{
+            text-align: center;
+            width: 22em;
+            max-height: auto;
+            object-fit: cover;
+            img{
+                @include dislayPosition(f,center,center);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: $box-shadow-1;
+                border-radius: 1rem;
 
+            }
+        }
+        .points__score{
+            background-color: map-get($grays ,3);
+            box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+            border-radius: 1rem;
+            width: 100%;
+            padding:map-get($spacers,4);
+        }
+        .points__header{
+            font: {
+                family: $family-title;
+            }
+            @include dislayPosition(f,s-b,f-start);
+            padding:map-get($spacers,4);
+            white-space: nowrap;
+            letter-spacing: .1em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .points__title{
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        .points__rating{
+            margin:0 map-get($spacers,3);
+            border-radius: 1em;
+            border:none;
+        }
+        .points__item{
+            text-align: center;
+            margin: map-get($spacers,1 ) 0;
+        }
+        .points__item--start{
+            @include dislayPosition(f,center,center);
+            text-align: center;
+            border-left: none;
+        }
+        .points__rating__img--start {
+            margin: 0 map-get($spacers,3) ;
+            height: 2em;
+            width: 2em;
+            filter:$shadow-drop-2;
+            background-color:$box-shadow-6;
+        }
+        .points__rating__content{
+            &--total{
+                @include dislayPosition(ib,n,n);
+                font-size: 2em;
+                font-weight: 600;
+            }
+            &--min{
+                @include dislayPosition(ib,n,n);
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        }
 
+        .points__area{
+            font: {
+                family: $family-text;
+                size: 1.2em;
+                weight: 600;
+            }
+            color:map-get($colors,"white" );
+            margin: map-get($spacers,1) 0 0 0 ;
+            letter-spacing: .1rem;
+            white-space: nowrap;
+        }
+        .points__number{
+            font-size: 1.5em;
+            font-weight:600;
+        }
+        .points__text{
+            text-align: left;
+            margin: map-get($spacers,2) map-get($spacers,2) 0 map-get($spacers,2) ;
+            font: {
+                family: $family-text;
+                size: 1.2em;
+                weight: 300;
+            }
+            color:map-get($whites,3);
+        }
+        .points__item--btns{
+            @include dislayPosition(f,s-b,center);
+            padding:map-get($spacers,4);
+            .points__btn--gameplay{
+                @include genericBtn(map-get($colors, "red"));
+                font-size: 1.2em;
+                &:hover{
+                    @include hoverBtns($box-shadow-3);
+                }
+
+            }
+            .poinst__icon:hover{
+                @include hoverIcons($filter-1);
+            }
+            .points__icon{
+                height: 1.2em;
+                width: 1.2em;
+                margin-right: map-get($spacers,1 );
+            
+            }
+            .points__btn--buy{
+                @include genericBtn(map-get($colors, "orange"));
+                font-size: 1.2em;
+        
+                &:hover{
+                    @include hoverBtns($box-shadow-7);
+                }
+            }
+        }
+    }
 }
+
+
 @include media-up(lg){
 
     .points{
-        margin:map-get($spacers,6);
+        margin:map-get($spacers,6)  auto;
         font-size:$font-size-base;
-    
+        max-width: 1300px;
+        @include dislayPosition(f,center,center);
         .points__img{
-            text-align: center;
-            width: 18em;
-            height: 25em;
+            width: 25em;
+            object-fit: contain;
             img{
                 @include dislayPosition(f,center,center);
                 object-fit: cover;
@@ -37,15 +439,17 @@
             background-color: map-get($grays ,1);
             box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
             border-radius: 1rem;
+            width: 100%;
         }
         .points__header{
+            padding: 0;
             font: {
                 family: $family-title;
             }
             @include dislayPosition(f,s-b,f-start);
-            padding:map-get($spacers,4);
+            margin:map-get($spacers,4);
             white-space: nowrap;
-            letter-spacing: .1rem;
+            letter-spacing: .1em;
             text-overflow: ellipsis;
             overflow: hidden;
         }
@@ -54,13 +458,13 @@
             font-weight: 600;
         }
         .points__rating{
-            margin:0 map-get($spacers,4);
-            border-radius: 1rem;
+            margin:0 map-get($spacers,3);
+            border-radius: 1em;
             border:none;
         }
         .points__item{
             text-align: center;
-            margin: map-get($spacers,1 ) 0;
+           
         }
         .points__item--start{
             @include dislayPosition(f,center,center);
@@ -82,7 +486,7 @@
             }
             &--min{
                 @include dislayPosition(ib,n,n);
-                font-size: 1.5em;
+                font-size: 1.2em;
                 font-weight: 400;
             }
         }
@@ -90,7 +494,7 @@
         .points__area{
             font: {
                 family: $family-text;
-                size: 1.5em;
+                size: 1.2em;
                 weight: 600;
             }
             color:map-get($colors,"white" );
@@ -99,22 +503,22 @@
             white-space: nowrap;
         }
         .points__number{
-            font-size: 1.8em;
+            font-size: 1.5em;
             font-weight:600;
         }
         .points__text{
             text-align: left;
-            margin: map-get($spacers,2) 0 0 0 ;
+           
             font: {
                 family: $family-text;
-                size: 1.5em;
+                size: 1.2em;
                 weight: 300;
             }
             color:map-get($whites,3);
         }
         .points__item--btns{
             @include dislayPosition(f,s-b,center);
-            padding:map-get($spacers,4);
+
             .points__btn--gameplay{
                 @include genericBtn(map-get($colors, "red"));
         
@@ -127,8 +531,8 @@
                 @include hoverIcons($filter-1);
             }
             .points__icon{
-                height: 1.5em;
-                width: 1.5em;
+                height: 1.2em;
+                width: 1.2em;
                 margin-right: map-get($spacers,1 );
             
             }
@@ -140,138 +544,6 @@
                 }
             }
         }
-
-    }
-
-}
-
-
-@include media-up(xl){
-
-    .points{
-        margin:map-get($spacers,6);
-        font-size:$font-size-base;
-
-        .points__img{
-            width: 25em;
-            height: 34em;
-            img{
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                box-shadow: $box-shadow-1;
-                border-radius: 1rem;
-
-            }
-        }
-        .points__score{
-            background-color: map-get($grays ,1);
-            box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-            border-radius: 1rem;
-        }
-        .points__header{
-            font: {
-                family: $family-title;
-            }
-            @include dislayPosition(f,s-b,f-start);
-            padding:map-get($spacers,4);
-            white-space: nowrap;
-            letter-spacing: .1rem;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .points__title{
-            font-size: 2em;
-            font-weight: 600;
-        }
-        .points__rating{
-            margin:0 map-get($spacers,4);
-            border-radius: 1rem;
-            border:none;
-        }
-        .points__item{
-            text-align: center;
-            margin: map-get($spacers,1 ) 0;
-        }
-        .points__item--start{
-            @include dislayPosition(f,center,center);
-            text-align: center;
-            border-left: none;
-        }
-        .points__rating__img--start {
-            margin: 0 map-get($spacers,3) ;
-            height: 3em;
-            width: 3em;
-            filter:$shadow-drop-2;
-            background-color:$box-shadow-6;
-        }
-        .points__rating__content{
-            &--total{
-                @include dislayPosition(ib,n,n);
-                font-size: 2em;
-                font-weight: 600;
-            }
-            &--min{
-                @include dislayPosition(ib,n,n);
-                font-size: 1.5em;
-                font-weight: 400;
-            }
-        }
-
-        .points__area{
-            font: {
-                family: $family-text;
-                size: 1.5em;
-                weight: 600;
-            }
-            color:map-get($colors,"white" );
-            margin: map-get($spacers,1) 0 0 0 ;
-            letter-spacing: .1rem;
-            white-space: nowrap;
-        }
-        .points__number{
-            font-size: 1.8em;
-            font-weight:600;
-        }
-        .points__text{
-            text-align: left;
-            margin: map-get($spacers,2) 0 0 0 ;
-            font: {
-                family: $family-text;
-                size: 1.5em;
-                weight: 300;
-            }
-            color:map-get($whites,3);
-        }
-        .points__item--btns{
-            @include dislayPosition(f,s-b,center);
-            padding:map-get($spacers,4);
-            .points__btn--gameplay{
-                @include genericBtn(map-get($colors, "red"));
-        
-                &:hover{
-                    @include hoverBtns($box-shadow-3);
-                }
-
-            }
-            .poinst__icon:hover{
-                @include hoverIcons($filter-1);
-            }
-            .points__icon{
-                height: 1.5em;
-                width: 1.5em;
-                margin-right: map-get($spacers,1 );
-            
-            }
-            .points__btn--buy{
-                @include genericBtn(map-get($colors, "orange"));
-        
-                &:hover{
-                    @include hoverBtns($box-shadow-7);
-                }
-            }
-        }
-
     }
 
 }

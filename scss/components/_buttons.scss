@@ -3,6 +3,7 @@
     box-shadow:$bx-shadow;
     transition:  all .3s ease-in-out;
     border:none;
+    opacity: 75%;
 }
 
 @mixin genericBtn ($btnColor){
@@ -14,12 +15,12 @@
         family: $family-text;
         weight:400; 
     };
-    margin: 0 map-get($spacers,3 );
+    margin:  map-get($spacers,1 );
     color: map-get($colors, "white");
 
     border-radius: 3rem;
     padding:map-get($spacers,1 );
     border: none;
-    height: 3em;
+    height: 2.2em;
     line-height: normal;
 }

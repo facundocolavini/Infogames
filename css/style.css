@@ -3782,151 +3782,453 @@ body {
       transform: scale(1.2);
       transition: all .2s ease; } }
 
+@media screen and (min-width: 0) {
+  .points {
+    margin: 3rem 3rem;
+    font-size: 1.2rem;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .points .points__img {
+      text-align: center;
+      width: 25em;
+      max-height: auto;
+      object-fit: cover; }
+      .points .points__img img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        border-radius: 1em; }
+    .points .points__score {
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px #06090f;
+      border-radius: 1em;
+      width: 100%; }
+    .points .points__header {
+      font-family: "Fjalla One";
+      padding: 3rem 0 1.2rem 0;
+      white-space: nowrap;
+      letter-spacing: .1em;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .points .points__title {
+      font-size: 1.3em;
+      font-weight: 600;
+      text-align: center; }
+    .points .points__rating {
+      border-radius: 1em;
+      border: none; }
+    .points .points__item {
+      text-align: center;
+      padding: 1rem 1.2rem; }
+    .points .points__item--start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-left: none; }
+    .points .points__rating__img--start {
+      margin: 0 1.2rem;
+      height: 2.2em;
+      width: 2.2em;
+      filter: drop-shadow(0px 0px 2px #d1b200);
+      background-color: 0 0 10px #d1b200; }
+    .points .points__rating__content {
+      padding: 0 1.2rem; }
+      .points .points__rating__content--total {
+        display: inline-block;
+        justify-content: none;
+        align-items: none;
+        font-size: 2em;
+        font-weight: 600; }
+      .points .points__rating__content--min {
+        display: inline-block;
+        justify-content: none;
+        align-items: none;
+        font-size: 1.2em;
+        font-weight: 400; }
+    .points .points__area {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: .9em;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: .1rem;
+      white-space: nowrap; }
+    .points .points__number {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: center; }
+    .points .points__text {
+      padding: 0 1.2rem;
+      text-align: center;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6); }
+    .points .points__item--btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .points .points__item--btns .points__btn--gameplay {
+        background-color: #be1010;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal;
+        width: 100%; }
+        .points .points__item--btns .points__btn--gameplay:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #bb0404;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; }
+      .points .points__item--btns .poinst__icon:hover {
+        filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%); }
+      .points .points__item--btns .points__icon {
+        height: 1.2em;
+        width: 1.2em;
+        margin-right: 0.75rem; }
+      .points .points__item--btns .points__btn--buy {
+        background-color: #B14E05;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal;
+        width: 100%; }
+        .points .points__item--btns .points__btn--buy:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #B14E05;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; } }
+
+@media screen and (min-width: 576px) {
+  .points {
+    margin: 10rem 10rem;
+    font-size: 1.2rem;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .points .points__img {
+      text-align: center;
+      width: 25em;
+      max-height: auto;
+      object-fit: cover; }
+      .points .points__img img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        border-radius: 1em; }
+    .points .points__score {
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px #06090f;
+      border-radius: 1em;
+      width: 100%; }
+    .points .points__header {
+      font-family: "Fjalla One";
+      padding: 3rem 3rem;
+      white-space: nowrap;
+      letter-spacing: .1em;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .points .points__title {
+      font-size: 1.8em;
+      font-weight: 600;
+      text-align: left; }
+    .points .points__rating {
+      border-radius: 1em;
+      border: none; }
+    .points .points__item {
+      text-align: center;
+      padding: 1rem 3rem; }
+    .points .points__item--start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-left: none; }
+    .points .points__rating__img--start {
+      margin: 0 1.2rem;
+      height: 2.5em;
+      width: 2.5em;
+      filter: drop-shadow(0px 0px 2px #d1b200);
+      background-color: 0 0 10px #d1b200; }
+    .points .points__rating__content--total {
+      display: inline-block;
+      justify-content: none;
+      align-items: none;
+      font-size: 2em;
+      font-weight: 600; }
+    .points .points__rating__content--min {
+      display: inline-block;
+      justify-content: none;
+      align-items: none;
+      font-size: 1.2em;
+      font-weight: 400; }
+    .points .points__area {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: .1rem;
+      white-space: nowrap; }
+    .points .points__number {
+      font-size: 1.5em;
+      font-weight: 600; }
+    .points .points__text {
+      text-align: left;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.3em;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6); }
+    .points .points__item--btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .points .points__item--btns .points__btn--gameplay {
+        background-color: #be1010;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal; }
+        .points .points__item--btns .points__btn--gameplay:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #bb0404;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; }
+      .points .points__item--btns .poinst__icon:hover {
+        filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%); }
+      .points .points__item--btns .points__icon {
+        height: 1.2em;
+        width: 1.2em;
+        margin-right: 0.75rem; }
+      .points .points__item--btns .points__btn--buy {
+        background-color: #B14E05;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal; }
+        .points .points__item--btns .points__btn--buy:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #B14E05;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; } }
+
+@media screen and (min-width: 768px) {
+  .points {
+    margin: 10rem 10rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .points .points__img {
+      text-align: center;
+      width: 22em;
+      max-height: auto;
+      object-fit: cover; }
+      .points .points__img img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        border-radius: 1rem; }
+    .points .points__score {
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 30px #06090f;
+      border-radius: 1rem;
+      width: 100%;
+      padding: 3rem; }
+    .points .points__header {
+      font-family: "Fjalla One";
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 3rem;
+      white-space: nowrap;
+      letter-spacing: .1em;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .points .points__title {
+      font-size: 1.8em;
+      font-weight: 600; }
+    .points .points__rating {
+      margin: 0 1.2rem;
+      border-radius: 1em;
+      border: none; }
+    .points .points__item {
+      text-align: center;
+      margin: 0.75rem 0; }
+    .points .points__item--start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-left: none; }
+    .points .points__rating__img--start {
+      margin: 0 1.2rem;
+      height: 2em;
+      width: 2em;
+      filter: drop-shadow(0px 0px 2px #d1b200);
+      background-color: 0 0 10px #d1b200; }
+    .points .points__rating__content--total {
+      display: inline-block;
+      justify-content: none;
+      align-items: none;
+      font-size: 2em;
+      font-weight: 600; }
+    .points .points__rating__content--min {
+      display: inline-block;
+      justify-content: none;
+      align-items: none;
+      font-size: 1.2em;
+      font-weight: 400; }
+    .points .points__area {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #fff;
+      margin: 0.75rem 0 0 0;
+      letter-spacing: .1rem;
+      white-space: nowrap; }
+    .points .points__number {
+      font-size: 1.5em;
+      font-weight: 600; }
+    .points .points__text {
+      text-align: left;
+      margin: 1rem 1rem 0 1rem;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.2em;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6); }
+    .points .points__item--btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem; }
+      .points .points__item--btns .points__btn--gameplay {
+        background-color: #be1010;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal;
+        font-size: 1.2em; }
+        .points .points__item--btns .points__btn--gameplay:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #bb0404;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; }
+      .points .points__item--btns .poinst__icon:hover {
+        filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%); }
+      .points .points__item--btns .points__icon {
+        height: 1.2em;
+        width: 1.2em;
+        margin-right: 0.75rem; }
+      .points .points__item--btns .points__btn--buy {
+        background-color: #B14E05;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 55%);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0.75rem;
+        color: #fff;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        border: none;
+        height: 2.2em;
+        line-height: normal;
+        font-size: 1.2em; }
+        .points .points__item--btns .points__btn--buy:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px #B14E05;
+          transition: all .3s ease-in-out;
+          border: none;
+          opacity: 75%; } }
+
 @media screen and (min-width: 992px) {
   .points {
-    margin: 10rem;
-    font-size: 1.6rem; }
-    .points .points__img {
-      text-align: center;
-      width: 18em;
-      height: 25em; }
-      .points .points__img img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-        border-radius: 1rem; }
-    .points .points__score {
-      background-color: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 30px #06090f;
-      border-radius: 1rem; }
-    .points .points__header {
-      font-family: "Fjalla One";
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 3rem;
-      white-space: nowrap;
-      letter-spacing: .1rem;
-      text-overflow: ellipsis;
-      overflow: hidden; }
-    .points .points__title {
-      font-size: 2em;
-      font-weight: 600; }
-    .points .points__rating {
-      margin: 0 3rem;
-      border-radius: 1rem;
-      border: none; }
-    .points .points__item {
-      text-align: center;
-      margin: 0.75rem 0; }
-    .points .points__item--start {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border-left: none; }
-    .points .points__rating__img--start {
-      margin: 0 1.2rem;
-      height: 3em;
-      width: 3em;
-      filter: drop-shadow(0px 0px 2px #d1b200);
-      background-color: 0 0 10px #d1b200; }
-    .points .points__rating__content--total {
-      display: inline-block;
-      justify-content: none;
-      align-items: none;
-      font-size: 2em;
-      font-weight: 600; }
-    .points .points__rating__content--min {
-      display: inline-block;
-      justify-content: none;
-      align-items: none;
-      font-size: 1.5em;
-      font-weight: 400; }
-    .points .points__area {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #fff;
-      margin: 0.75rem 0 0 0;
-      letter-spacing: .1rem;
-      white-space: nowrap; }
-    .points .points__number {
-      font-size: 1.8em;
-      font-weight: 600; }
-    .points .points__text {
-      text-align: left;
-      margin: 1rem 0 0 0;
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.5em;
-      font-weight: 300;
-      color: rgba(255, 255, 255, 0.6); }
-    .points .points__item--btns {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem; }
-      .points .points__item--btns .points__btn--gameplay {
-        background-color: #be1010;
-        font-size: 1.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% - 55%);
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 400;
-        margin: 0 1.2rem;
-        color: #fff;
-        border-radius: 3rem;
-        padding: 0.75rem;
-        border: none;
-        height: 3em;
-        line-height: normal; }
-        .points .points__item--btns .points__btn--gameplay:hover {
-          cursor: pointer;
-          box-shadow: 0 0 10px #bb0404;
-          transition: all .3s ease-in-out;
-          border: none; }
-      .points .points__item--btns .poinst__icon:hover {
-        filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%); }
-      .points .points__item--btns .points__icon {
-        height: 1.5em;
-        width: 1.5em;
-        margin-right: 0.75rem; }
-      .points .points__item--btns .points__btn--buy {
-        background-color: #B14E05;
-        font-size: 1.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% - 55%);
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 400;
-        margin: 0 1.2rem;
-        color: #fff;
-        border-radius: 3rem;
-        padding: 0.75rem;
-        border: none;
-        height: 3em;
-        line-height: normal; }
-        .points .points__item--btns .points__btn--buy:hover {
-          cursor: pointer;
-          box-shadow: 0 0 10px #B14E05;
-          transition: all .3s ease-in-out;
-          border: none; } }
-
-@media screen and (min-width: 1200px) {
-  .points {
-    margin: 10rem;
-    font-size: 1.6rem; }
+    margin: 10rem auto;
+    font-size: 1.6rem;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .points .points__img {
       width: 25em;
-      height: 34em; }
+      object-fit: contain; }
       .points .points__img img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         object-fit: cover;
         width: 100%;
         height: 100%;
@@ -3935,27 +4237,28 @@ body {
     .points .points__score {
       background-color: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 30px #06090f;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      width: 100%; }
     .points .points__header {
+      padding: 0;
       font-family: "Fjalla One";
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 3rem;
+      margin: 3rem;
       white-space: nowrap;
-      letter-spacing: .1rem;
+      letter-spacing: .1em;
       text-overflow: ellipsis;
       overflow: hidden; }
     .points .points__title {
       font-size: 2em;
       font-weight: 600; }
     .points .points__rating {
-      margin: 0 3rem;
-      border-radius: 1rem;
+      margin: 0 1.2rem;
+      border-radius: 1em;
       border: none; }
     .points .points__item {
-      text-align: center;
-      margin: 0.75rem 0; }
+      text-align: center; }
     .points .points__item--start {
       display: flex;
       justify-content: center;
@@ -3978,31 +4281,29 @@ body {
       display: inline-block;
       justify-content: none;
       align-items: none;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: 400; }
     .points .points__area {
       font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: 600;
       color: #fff;
       margin: 0.75rem 0 0 0;
       letter-spacing: .1rem;
       white-space: nowrap; }
     .points .points__number {
-      font-size: 1.8em;
+      font-size: 1.5em;
       font-weight: 600; }
     .points .points__text {
       text-align: left;
-      margin: 1rem 0 0 0;
       font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: 300;
       color: rgba(255, 255, 255, 0.6); }
     .points .points__item--btns {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 3rem; }
+      align-items: center; }
       .points .points__item--btns .points__btn--gameplay {
         background-color: #be1010;
         font-size: 1.5em;
@@ -4012,23 +4313,24 @@ body {
         width: calc(100% - 55%);
         font-family: "Roboto Condensed", sans-serif;
         font-weight: 400;
-        margin: 0 1.2rem;
+        margin: 0.75rem;
         color: #fff;
         border-radius: 3rem;
         padding: 0.75rem;
         border: none;
-        height: 3em;
+        height: 2.2em;
         line-height: normal; }
         .points .points__item--btns .points__btn--gameplay:hover {
           cursor: pointer;
           box-shadow: 0 0 10px #bb0404;
           transition: all .3s ease-in-out;
-          border: none; }
+          border: none;
+          opacity: 75%; }
       .points .points__item--btns .poinst__icon:hover {
         filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%); }
       .points .points__item--btns .points__icon {
-        height: 1.5em;
-        width: 1.5em;
+        height: 1.2em;
+        width: 1.2em;
         margin-right: 0.75rem; }
       .points .points__item--btns .points__btn--buy {
         background-color: #B14E05;
@@ -4039,18 +4341,19 @@ body {
         width: calc(100% - 55%);
         font-family: "Roboto Condensed", sans-serif;
         font-weight: 400;
-        margin: 0 1.2rem;
+        margin: 0.75rem;
         color: #fff;
         border-radius: 3rem;
         padding: 0.75rem;
         border: none;
-        height: 3em;
+        height: 2.2em;
         line-height: normal; }
         .points .points__item--btns .points__btn--buy:hover {
           cursor: pointer;
           box-shadow: 0 0 10px #B14E05;
           transition: all .3s ease-in-out;
-          border: none; } }
+          border: none;
+          opacity: 75%; } }
 
 @media screen and (min-width: 0) {
   .header {
