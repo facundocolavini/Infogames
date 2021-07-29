@@ -16,6 +16,7 @@ window.addEventListener('load',function(){
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 3,
               slidesToScroll: 2,
+              draggable: true,
 
             }
           },{
@@ -25,6 +26,7 @@ window.addEventListener('load',function(){
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 3,
               slidesToScroll: 3,
+              draggable: true,
 
             }
           },{
@@ -34,6 +36,7 @@ window.addEventListener('load',function(){
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 3,
                 slidesToScroll: 3,
+                draggable: true,
 
               }
             },{
@@ -43,7 +46,7 @@ window.addEventListener('load',function(){
                   // Set to `auto` and provide item width to adjust to viewport
                   slidesToShow: 4,
                   slidesToScroll: 3,
-
+                  draggable: true,
                 }
               },{
               // screens greater than >= 1024px
@@ -51,7 +54,7 @@ window.addEventListener('load',function(){
               settings: {
                 slidesToShow: 5,
                 slidesToScroll: 4,
-
+                draggable: true,
               }
             }
           ]
@@ -73,6 +76,7 @@ window.addEventListener('load',function(){
             // Set to `auto` and provide item width to adjust to viewport
             slidesToShow: 3,
             slidesToScroll: 2,
+            draggable: true,
 
           }
         },{
@@ -82,6 +86,7 @@ window.addEventListener('load',function(){
             // Set to `auto` and provide item width to adjust to viewport
             slidesToShow: 3,
             slidesToScroll: 3,
+            draggable: true,
 
           }
         },{
@@ -91,6 +96,7 @@ window.addEventListener('load',function(){
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 3,
               slidesToScroll: 3,
+              draggable: true,
 
             }
           },{
@@ -100,6 +106,7 @@ window.addEventListener('load',function(){
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 4,
                 slidesToScroll: 3,
+                draggable: true,
 
               }
             },{
@@ -108,6 +115,7 @@ window.addEventListener('load',function(){
             settings: {
               slidesToShow: 5,
               slidesToScroll: 4,
+              draggable: true,
 
             }
           }
