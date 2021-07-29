@@ -1,0 +1,17 @@
+
+@import 'abstracts/variables',
+        'abstracts/animations',
+        'abstracts/breakpoints',
+        'abstracts/functions',
+        'abstracts/mixins';
+    
+@import 'base/resets',  
+        'base/typography';
+        
+@import 'pages/home',
+        'pages/category',
+        'pages/community',
+        'pages/aboutus',
+        'pages/singup',
+        'pages/game',
+        'pages/404';

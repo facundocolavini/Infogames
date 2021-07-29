@@ -1,0 +1,71 @@
+//Footer only see in md and lg display
+@include media-up (md){
+    .footer{
+        font: {
+            size:$font-size-base-md;
+            family:$family-text;
+            weight:400; 
+        }
+        height: 4 * $font-size-base-md;
+        @include dislayPosition(f,center,center );
+        
+
+        &__list{
+            @include dislayPosition(f,f-start,center );
+        }
+        &__item{
+            padding: 0 map-get($spacers,2);
+        }
+        &__link:hover{
+           @include hoverPrimary;
+        }
+        &__link{
+            color:map-get($whites, 3);
+        }
+        &__copy{
+            @include dislayPosition(f,f-end,f-end );
+            padding:  map-get($spacers,3)  map-get($spacers,3);
+        }
+        &__link--copy{
+            color:map-get($whites, 3);
+        }
+        &__link--copy:hover{
+            @include hoverPrimary;
+        }
+    }
+}
+@include media-up (lg){
+    .footer{
+        font: {
+            size:$font-size-base;
+            family:$family-text;
+            weight:400; 
+        }
+        height: 4 * $font-size-base;
+        @include dislayPosition(f,center,center );
+        
+
+        &__list{
+            @include dislayPosition(f,f-start,center );
+        }
+        &__item{
+            padding: 0 map-get($spacers,2);
+        }
+        &__link:hover{
+           @include hoverPrimary;
+        }
+        &__link{
+            color:map-get($whites, 3);
+        }
+        &__copy{
+            @include dislayPosition(f,f-end,f-end );
+            padding:  map-get($spacers,3)  map-get($spacers,3);
+        }
+        &__link--copy{
+            color:map-get($whites, 3);
+        }
+        &__link--copy:hover{
+            @include hoverPrimary;
+        }
+    }
+}

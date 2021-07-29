@@ -1,0 +1,17 @@
+@mixin dislayPosition ($display,$x,$y){
+    display:map-get($displays , $display);
+    justify-content: map-get($justify ,$x);
+    align-items: map-get($align ,$y);
+}
+
+
+@mixin hoverPrimary {
+    cursor:pointer;
+    filter: invert(50%) sepia(100%) saturate(4344%)  brightness(90%) contrast(100%);
+    transform: scale(1.2);
+    transition: all .2s ease;
+}
+
+@mixin hoverIcons ($filter){
+    filter: $filter;
+}

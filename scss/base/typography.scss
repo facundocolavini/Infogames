@@ -1,0 +1,11 @@
+@font-face{
+    font-family:'Fjalla One';
+    src:url('../assets/fonts/FjallaOne-Regular.ttf');
+}
+@font-face{
+    font-family:'Roboto Condensed';
+    src:url('../assets/fonts/RobotoCondensed-Regular.ttf');
+}
+body{
+    font-family: $family-text;
+}

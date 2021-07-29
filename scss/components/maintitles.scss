@@ -1,0 +1,109 @@
+@include media-up (xs){
+    .title{
+        margin-top:map-get($spacers,6);
+        margin-bottom:map-get($spacers,2);
+        font: {
+            size: $font-size-base-xs;
+            family:$family-title;
+        }
+        @include dislayPosition(f,s-b,center);
+
+        &__section{
+            font: {
+                size: map-get($font-sizes-xs,2);
+            }
+        }
+        &__section--low{
+            font: {
+                size: map-get($font-sizes-xs,2);
+            }
+        }
+        &__section--low:hover{
+            @include hoverPrimary;
+            transform:scale(1) ;
+        }
+    }
+}
+@include media-up(sm){
+    .title{
+        margin-top:map-get($spacers,6);
+        margin-bottom:map-get($spacers,2);
+
+        font: {
+            size: $font-size-base-sm;
+            family:$family-title;
+        }
+        @include dislayPosition(f,s-b,center);
+        &__section{
+            font: {
+                size: map-get($font-sizes-sm,2);
+            }
+        }
+        &__section--low{
+            font: {
+                size: map-get($font-sizes-sm,2);
+            }
+        }
+        &__section--low:hover{
+            @include hoverPrimary;
+            transform:scale(1) ;
+        }
+    }
+}
+
+@include media-up (md){
+    padding-right:map-get($spacers,3);
+    margin-top:map-get($spacers,6);
+    margin-bottom:map-get($spacers,3);
+    .title{
+        font: {
+            size: $font-size-base-md;
+            family:$family-title;
+        }
+   
+        @include dislayPosition(f,s-b,center);
+
+        &__section{
+            font: {
+                size: map-get($font-sizes-md,2);
+            }
+        }
+        &__section--low{
+      
+            font: {
+                size: map-get($font-sizes-md,2);
+            }
+        }
+        &__section--low:hover{
+            @include hoverPrimary;
+            transform:scale(1) ;
+        }
+    }
+}
+@include media-up (lg){
+    .title{
+        padding-right:map-get($spacers,3);
+        margin-top:map-get($spacers,6);
+        margin-bottom:map-get($spacers,2);
+        font: {
+            size: $font-size-base;
+            family:$family-title;
+        }
+        @include dislayPosition(f,s-b,center);
+        &__section{
+            font: {
+                size: 2em;
+            }
+        }
+        &__section--low{
+            font: {
+                size:2em;
+            }
+        }
+        &__section--low:hover{
+            @include hoverPrimary;
+            transform:scale(1) ;
+        }
+    }
+}
+

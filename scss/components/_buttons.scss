@@ -1,0 +1,25 @@
+@mixin hoverBtns($bx-shadow) {
+    cursor:pointer;
+    box-shadow:$bx-shadow;
+    transition:  all .3s ease-in-out;
+    border:none;
+}
+
+@mixin genericBtn ($btnColor){
+    background-color:$btnColor;
+    font-size: 1.5em;
+    @include dislayPosition(f,center,center);
+    width: calc(100% - 55%);
+    font: {
+        family: $family-text;
+        weight:400; 
+    };
+    margin: 0 map-get($spacers,3 );
+    color: map-get($colors, "white");
+
+    border-radius: 3rem;
+    padding:map-get($spacers,1 );
+    border: none;
+    height: 3em;
+    line-height: normal;
+}

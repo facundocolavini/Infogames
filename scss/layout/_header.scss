@@ -1,0 +1,167 @@
+
+@include media-up (xs){
+    .header{
+        font-size: $font-size-base-xs;
+        background-color: map-get($colors, "orange");
+        box-shadow: map-get($shadows,1);
+        height: 4.5em;
+        @include dislayPosition(f,s-b,center);
+        &__link{
+            box-sizing: border-box;
+            height: 3.5 * $font-size-base-xs;
+            width: 3.5 * $font-size-base-xs;
+
+            padding-right: map-get($spacers,2\.5);
+        }
+        &__img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            object-fit: contain;         
+            
+        }
+        &__img:hover{
+            transform: scale(1.2);
+            transition: all .2s ease-in-out;
+        }
+        &__text{
+            font: {
+                weight: 600;
+                family:$family-text;
+            } 
+            padding-left:map-get($spacers,2);   
+            color: map-get($colors,'white');
+            font-size: map-get($font-sizes-xs,1);  
+         
+        } 
+        &__text--games{
+            font: {
+                weight: 600;
+                family:$family-text;
+            } 
+            color: map-get($grays,4);
+            padding-left:map-get($spacers,1);
+            font-size: map-get($font-sizes-xs,1 * $font-size-base-xs );  
+        }
+    }
+}
+@include media-up (sm){
+    .header{
+        font-size: $font-size-base-sm;
+        background-color: map-get($colors, "orange");
+        box-shadow: map-get($shadows,1);
+        @include dislayPosition(f,s-b,center);
+        height: 5em;
+        &__link{
+            height: 3.5em;
+            width: 4em;
+            padding-right: map-get($spacers,2\.5);
+        }
+        &__img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            object-fit: contain;       
+        }
+        &__img:hover{
+            transform: scale(1.2);
+            transition: all .2s ease-in-out;
+        }
+        &__text{
+            font: {
+                weight: 600;
+                family:$family-text;
+            }
+ 
+            padding-left:map-get($spacers,2/.5);   
+            color: map-get($colors,'white');
+            font-size: map-get($font-sizes-sm,1);  
+        }
+        &__text--games{
+            color: map-get($grays,4);
+            padding-left:map-get($spacers,1);
+            font-size: map-get($font-sizes-sm,1);  
+        }
+    }
+}
+@include media-up (md){
+    .header{
+        font-size: $font-size-base-md;
+        background-color: map-get($colors, "orange");
+        box-shadow: map-get($shadows,1);
+        padding-left:map-get($spacers,4);
+        @include dislayPosition(f,f-start,center);
+        height: 5em;
+        &__link{
+            height: 4em;
+            width: 4em;
+        }
+        &__img{
+            @include dislayPosition(f,center,center);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            object-fit: contain;       
+        }
+        &__img:hover{
+            transform: scale(1.1);
+            transition: all .2s ease-in-out;
+        }
+        &__text{
+            font: {
+                weight: 600;
+                family:$family-text;
+            }
+            margin-left:map-get($spacers,2);
+            border-left: $border-header;  
+            color: map-get($colors,'white');
+            font-size: map-get($font-sizes-md,1);  
+        }
+        &__text--games{
+            color: map-get($grays,4);
+            padding-left:map-get($spacers,1);
+            font-size: map-get($font-sizes-md,1);  
+        } 
+    }
+}
+@include media-up (lg){
+    .header{
+        font-size: $font-size-base;
+        background-color: map-get($colors, "orange");
+        box-shadow: map-get($shadows,1);
+        @include dislayPosition(f,f-start,center);
+   
+        height: 4em;
+        &__link{
+            height: 4em;
+            width: 4em;
+            padding-right: map-get($spacers,3);
+        }
+        &__img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            object-fit: contain;       
+        }
+        &__img:hover{
+            transform: scale(1.2);
+            transition: all .2s ease-in-out;
+        }
+        &__text{
+            font: {
+                weight: 600;
+                family:$family-text;
+            }
+            border-left: $border-header;  
+            padding-left:map-get($spacers,2/.5);   
+            color: map-get($colors,'white');
+            font-size: map-get($font-sizes-lg,1);  
+        }
+        &__text--games{
+            color: map-get($grays,4);
+            padding-left:map-get($spacers,1);
+            font-size: map-get($font-sizes-lg,1);  
+        }
+    }
+}
+ 

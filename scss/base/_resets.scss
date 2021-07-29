@@ -1,0 +1,51 @@
+*,:before,:after{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    min-width: 0;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 10px;
+    bottom: 0;
+    position:relative;
+ 
+    display: flex;
+    justify-self: center;
+    font-family:$family-text;
+    background: map-get($gradients,1);
+    color:map-get($colors,"white");
+    scroll-behavior: smooth;
+}
+
+main{
+    margin-bottom: 10em;
+
+}
+
+footer{
+
+    position: relative;
+    bottom:0;
+   
+}
+.col,.container-fluid{
+    padding:0;
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+ul,li,a{
+    list-style-type: none;
+    text-decoration: none;
+    color:map-get($colors,"white");
+    margin:0;
+    padding:0;
+}

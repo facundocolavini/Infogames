@@ -1,0 +1,276 @@
+
+/* ----Variables----- */
+// Colors varibles
+$color-primary:#B14E05;
+$color-primary-dark:#5D2B09;
+$color-secodary-dark:hsl(218, 44%, 4%);
+$color-transparent-dark-0: hsla(0, 0%, 0%, 0.1);
+$color-transparent-dark-1: hsla(0, 0%, 0%, 0.3);
+$color-transparent-dark-2: hsla(0, 0%, 0%, 0.5);
+$color-transparent-dark-3: hsla(0, 0%, 0%, 0.8);
+$color-transparent-light-0: hsla(0, 0%, 100%, 0.05);
+$color-transparent-light-1: hsla(0, 0%, 100%, 0.1);
+$color-transparent-light-2: rgba(255, 255, 255, 0.3);
+$color-transparent-light-3: hsla(0, 0%, 100%, 0.6);
+$color-transparent-light-4: hsla(0, 0%, 100%, 0.8);
+$color-red: #be1010;
+$color-red-dark: #bb0404;
+$color-text:#fff; 
+$filter-1:invert(0%) sepia(100%) saturate(12%) hue-rotate(201deg) brightness(102%) contrast(103%);
+$filter-2:invert(50%) sepia(100%) saturate(4344%)  brightness(90%) contrast(100%);
+//Colors Gradients
+$background-gradient-1:linear-gradient(180deg, $color-primary 0.52%, $color-primary-dark 29.69%, $color-secodary-dark 100%);
+$background-gradient-2:linear-gradient(180deg, rgba(122, 51, 0, 0.92) 21.31%, rgba(93, 43, 9, 0.92) 45.44%, rgba(87, 40, 5, 0.92) 92.4%); 
+
+//Typography
+$family-text:'Roboto Condensed', sans-serif;
+$family-title:'Fjalla One';
+
+
+//Effects
+$box-shadow-1: 0 0 10px $color-transparent-dark-3;
+$box-shadow-2: 0 0 30px $color-secodary-dark;
+$box-shadow-3:0 0 10px $color-red-dark;
+$box-shadow-4:0 0 10px $color-red;
+$box-shadow-5: 0 0 10px #081937;
+$box-shadow-6: 0 0 10px #d1b200;
+$box-shadow-7: 0 0 10px $color-primary;
+
+$border-header: 1px solid $color-transparent-light-2;
+$shadow-drop-1: drop-shadow(0px 1px 1px #0a0a0a); /* use propertie filter */
+$shadow-drop-2: drop-shadow(0px 0px 2px #d1b200); /* use propertie filter */
+$border-1: 3px outset $color-secodary-dark;
+
+//Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+/*--- Maps---- */
+//Darks
+$shadows: () !default;
+$shadows: map-merge(
+  (
+    1: $box-shadow-1,
+    2: $box-shadow-2
+  ),
+  $shadows
+);
+
+//Darks
+$grays: () !default;
+$grays: map-merge(
+  (
+    0: $color-transparent-dark-0,
+    1: $color-transparent-dark-1,
+    2: $color-transparent-dark-2,
+    3: $color-transparent-dark-3,
+    4: $color-secodary-dark
+  ),
+  $grays
+);
+
+//Whites
+$whites: () !default;
+$whites: map-merge(
+  (
+    0: $color-transparent-light-0,
+    1: $color-transparent-light-1,
+    2: $color-transparent-light-2,
+    3: $color-transparent-light-3,
+    4: $color-transparent-light-4
+  ),
+  $whites
+);
+
+//Colors
+$colors: () !default;
+$colors: map-merge(
+  (
+    "orange":     $color-primary,
+    "brown":      $color-primary-dark,
+    "red":        $color-red,
+    "red-dark":   $color-red-dark,
+    "white":      $color-text
+  ),
+  $colors
+);
+
+//Gradients
+$gradients: () !default;
+$gradients: map-merge(
+  (
+    1: $background-gradient-1,
+    2: $background-gradient-2
+  ),
+  $gradients
+);
+
+//Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .75),
+    1\.5: ($spacer * .9),
+    2: ($spacer * 1),
+    2\.5: ($spacer * 1.2),
+    3: ($spacer * 1.2),
+    3\.5: ($spacer * 2),
+    4: ($spacer * 3),
+    4\.5: ($spacer *5),
+    5: ($spacer * 7),
+    5\.5: ($spacer * 8),
+    6: ($spacer * 10),
+  ),
+  $spacers
+);
+
+//display and position
+$displays: () !default;
+$displays: map-merge(
+  (
+    f:          flex,
+    g:          grid,
+    b:          block,
+    i:          inline,
+    ib:         inline-block,
+    n :         none
+  ),
+  $displays
+);
+
+$justify: () !default;
+$justify:map-merge(
+  (
+    center:     center,
+    rigth:      right,
+    left:       left,
+    f-end:      flex-end,
+    f-start:    flex-start,
+    s-b:        space-between,
+    s-a:        space-around,
+    s-e:        space-evenly,
+    s:          stretch,
+    n:          none
+  ),
+  $justify
+);
+$align: () !default;
+$align:map-merge(
+  (
+    center:     center,
+    rigth:      right,
+    left:       left,
+    f-end:      flex-end,
+    f-start:    flex-start,
+    s-b:        space-between,
+    s-a:        space-around,
+    s-e:        space-evenly,
+    s:          stretch,
+    n:          none
+  ),
+  $align
+);
+
+//Example
+
+/*---Typography---*/
+
+$font-size-base: 1.6rem !default; // Assumes the browser default, typically `16px`
+$font-size-base-md: 1.4rem                        !default;
+$font-size-base-sm: 1.2rem                        !default;
+$font-size-base-xs: 1rem                          !default;
+
+$h1-font-size-lg:$font-size-base * 1.5            !default;
+$h2-font-size-lg:$font-size-base * 1.4            !default;
+$h3-font-size-lg:$font-size-base * 1.3            !default;
+$h4-font-size-lg:$font-size-base * 1.2            !default;
+$h5-font-size-lg:$font-size-base * 1.1            !default;
+$h6-font-size-lg:$font-size-base                  !default;
+
+$h1-font-size-md:$font-size-base-md * 1.5         !default;
+$h2-font-size-md:$font-size-base-md * 2           !default;
+$h3-font-size-md:$font-size-base-md * 1.2         !default;
+$h4-font-size-md:$font-size-base-md * 1           !default;
+$h5-font-size-md:$font-size-base-md * 0.5         !default;
+$h6-font-size-md:$font-size-base-md               !default;
+
+$h1-font-size-sm:$font-size-base-sm * 2.5         !default;
+$h2-font-size-sm:$font-size-base-sm * 2.2         !default;
+$h3-font-size-sm:$font-size-base-sm * 1.2         !default;
+$h4-font-size-sm:$font-size-base-sm * 1           !default;
+$h5-font-size-sm:$font-size-base-sm * 0.5         !default;
+$h6-font-size-sm:$font-size-base-sm               !default;
+
+$h1-font-size-xs:$font-size-base-xs * 2           !default;
+$h2-font-size-xs:$font-size-base-xs * 1.8         !default;
+$h3-font-size-xs:$font-size-base-xs * 1.5         !default;
+$h4-font-size-xs:$font-size-base-xs * 1.2         !default;
+$h5-font-size-xs:$font-size-base-xs * 1           !default;
+$h6-font-size-xs:$font-size-base-xs               !default;
+
+$p-font-size-lg:$font-size-base    * 0.8          !default;
+$p-font-size-md:$font-size-base-md * 0.75         !default;
+$p-font-size-sm:$font-size-base-sm * 1.25         !default;
+$p-font-size-xs:$font-size-base-xs * 1            !default;
+
+
+$font-sizes-lg: (
+  1: $h1-font-size-lg,
+  2: $h2-font-size-lg,
+  3: $h3-font-size-lg,
+  4: $h4-font-size-lg,
+  5: $h5-font-size-lg,
+  6: $h6-font-size-lg,
+  7: $p-font-size-lg
+) !default;
+
+$font-sizes-md: (
+  1: $h1-font-size-md,
+  2: $h2-font-size-md,
+  3: $h3-font-size-md,
+  4: $h4-font-size-md,
+  5: $h5-font-size-md,
+  6: $h6-font-size-md,
+  7: $p-font-size-md
+) !default;
+
+$font-sizes-sm: (
+  1: $h1-font-size-sm,
+  2: $h2-font-size-sm,
+  3: $h3-font-size-sm,
+  4: $h4-font-size-sm,
+  5: $h5-font-size-sm,
+  6: $h6-font-size-sm,
+  7: $p-font-size-sm
+) !default;
+
+$font-sizes-xs: (
+  1: $h1-font-size-xs,
+  2: $h2-font-size-xs,
+  3: $h3-font-size-xs,
+  4: $h4-font-size-xs,
+  5: $h5-font-size-xs,
+  6: $h6-font-size-xs,
+  7: $p-font-size-xs
+) !default;
+
+$icons: () !default;
+$icons:(
+    home:      'home',
+    joystick:  'joystick',
+    user:      'user',
+    users:     'users',
+    question:  'question'
+);
+@debug map-get($spacers,1\.5);
+
+/* ----Variables----- */  
+
+  

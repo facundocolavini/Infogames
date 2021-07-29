@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Info Games</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../home.html">
+                <img class="header__imgLogo" src="../assets/icons/logo.svg" alt="brand">
+            </a>
+            <p class="header__textLogo--info">INFO<span class="header__textLogo--games">GAMES</span></p>
+        </header>
+        <!--nav -->
+        <nav id="top" class="nav">
+            <ul>
+                <li><a href="../home.html"><img loading="lazy" class="nav__icons" src="../assets/icons/home.svg" alt="category icon"><span class="nav__text">HOME</span></a></li>
+                <li><a href="category.html"><img loading="lazy" class="nav__icons" src="../assets/icons/palanca-de-mando.svg" alt="category icon"><span class="nav__text">CATEGORIAS</span></a></li>
+                <li><a href="community.html"><img loading="lazy" class="nav__icons" src="../assets/icons/multiple-users-silhouette.svg" alt="category icon"><span class="nav__text">COMUNIDAD</span></a></li>
+                <li><a href="aboutus.html"><img loading="lazy" class="nav__icons" src="../assets/icons/signo-de-pregunta.svg" alt="category icon"><span class="nav__text">AYUDA</span></a></li>
+                <li><a href="singup.html"><img loading="lazy" class="nav__icons" src="../assets/icons/forma-de-usuario.svg" alt="category icon"><span class="nav__text">REGISTRATE</span></a></li>
+            </ul>
+        </nav>
+        <!-- Section ask frequently-->
+        <main class="main">
+            <section class="section">
+                <header class="section__header--title">
+                    <h3 class="section__title"> Regristrate</h3>
+                    <p class="section__description"> En esta seccion podras crear una cuenta y ser parte de la comunidad de INFO GAMES</p>
+                </header> 
+            </section>
+            <section class="form form__img ">
+                <div class="form__header">
+                    <h1 class="section__title">Crear Nueva Cuenta</h1>
+                </div>
+                <div>
+                    <form  action="">
+                        <label class="form__label" for="nameuser">Nombre de usuario</label>
+                        <input class="form__input" type="text" name="nameuser" id="nameUser">
+                        <label class="form__label" for="email">Correo electrónico</label>
+                        <input class="form__input" type="text" name="email" id="userEmail">
+                        <label class="form__label" for="pass">Ingrese una contraseña</label>
+                        <input class="form__input" type="password" name="pass" id="userPass">
+                        <button class="form__button"type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>   
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="footer__list">
+                <li><a class="footer__link" href="#top">Ir arriba</a></li>
+                <li><a class="footer__link" href="#">Politica de Privacidad</a></li>
+                <li><a class="footer__link" href="#">Terminos y condiciones</a></li>
+                <li><a class="footer__link" href="#">Contactos</a></li>
+            </ul>
+            <div class="footer__copy"><a class="footer__link" href="../home.html">Copyright© 2021 Info Games</a></div>
+        </footer>
+    </div>
+</body>
+</html>
