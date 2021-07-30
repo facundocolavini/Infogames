@@ -1,4 +1,4 @@
-.photo-gallery {
+/* .photo-gallery {
     color:#313437;
 
 }
@@ -42,16 +42,120 @@
     padding-bottom:30px;
   }
   
-  
+   */
 @include media-up (xs){
-    
+    .gallery{
+        padding: 0;
+       
+        font-size: $font-size-base-xs;
+        margin:map-get($spacers,4)  map-get($spacers,4);
+        
+        .gallery__photos{
+
+        }   
+        .gallery__item{
+            object-fit: cover;
+            padding-bottom: map-get($spacers,3);
+        }
+        .item__link{
+     
+            object-fit: contain;
+
+            border-radius: 5em;
+            .item__img{
+                background-position: center;
+                background-size: cover;
+                border-radius: 2em;
+                box-shadow: $box-shadow-2;
+                object-fit: cover;
+            }
+        }
+    }
 }
 @include media-up (sm){
-    
+    .gallery{
+        padding: 0;
+       
+        font-size: $font-size-base-xs;
+        margin:map-get($spacers,4)  map-get($spacers,4);
+        
+        .gallery__photos{
+
+        }   
+        .gallery__item{
+            object-fit: cover;
+            padding-bottom: map-get($spacers,3);
+        }
+        .item__link{
+     
+            object-fit: contain;
+
+            border-radius: 5em;
+            .item__img{
+                background-position: center;
+                background-size: cover;
+                border-radius: 2em;
+                box-shadow: $box-shadow-2;
+                object-fit: cover;
+            }
+        }
+    }
 }
 @include media-up (md){
+    .gallery{
+        padding: 0;
+       
+        font-size: $font-size-base-xs;
+        margin:map-get($spacers,4)  map-get($spacers,4);
+        
+        .gallery__photos{
 
+        }   
+        .gallery__item{
+            object-fit: cover;
+            padding-bottom: map-get($spacers,3);
+        }
+        .item__link{
+     
+            object-fit: contain;
+
+            border-radius: 5em;
+            .item__img{
+                background-position: center;
+                background-size: cover;
+                border-radius: 2em;
+                box-shadow: $box-shadow-2;
+                object-fit: cover;
+            }
+        }
+    }
 }
 @include media-up (lg){
-    
+    .gallery{
+
+        font-size:$font-size-base;
+        height: 100%;
+        width: 100%;
+
+        .gallery__photos{
+            margin:map-get($spacers,6)  auto;
+        }   
+        .gallery__item{
+            object-fit: cover;
+            padding-bottom: map-get($spacers,3);
+        }
+        .item__link{
+     
+            object-fit: contain;
+
+            border-radius: 5em;
+            .item__img{
+                background-position: center;
+                background-size: cover;
+                border-radius: 2em;
+                box-shadow: $box-shadow-2;
+                object-fit: cover;
+            }
+        }
+    }
 }

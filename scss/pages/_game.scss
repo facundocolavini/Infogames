@@ -423,6 +423,7 @@
         font-size:$font-size-base;
         height: 100%;
         width: 100%;
+        min-width:800px; 
         @include dislayPosition(f,center,center);
         .points__img{
             width: 25em;
