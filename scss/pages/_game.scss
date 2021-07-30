@@ -2,7 +2,8 @@
         'layout/navbar',
         'layout/footer';
 
-@import 'components/buttons';
+@import 'components/buttons',
+        'components/sliders';
 
 @include media-up(xs){
     .points{
@@ -420,7 +421,8 @@
     .points{
         margin:map-get($spacers,6)  auto;
         font-size:$font-size-base;
-        max-width: 1300px;
+        height: 100%;
+        width: 100%;
         @include dislayPosition(f,center,center);
         .points__img{
             width: 25em;
