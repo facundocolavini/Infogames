@@ -152,8 +152,6 @@
 
 @include media-up(sm){
     .points{
-        margin:map-get($spacers,6)  map-get($spacers,6);
-
         font-size:$font-size-base-sm;
         max-width: 1300px;
         @include dislayPosition(f,center,center);
@@ -284,7 +282,7 @@
 }
 @include media-up(md){
     .points{
-        margin:map-get($spacers,6)  map-get($spacers,6);
+
         font-size:$font-size-base;
         @include dislayPosition(f,center,center);
         .points__img{
@@ -419,20 +417,17 @@
 @include media-up(lg){
 
     .points{
-        margin:map-get($spacers,6)  auto;
+    
         font-size:$font-size-base;
-        height: 100%;
-        width: 100%;
-        min-width:800px; 
-        @include dislayPosition(f,center,center);
+    
+
         .points__img{
-            width: 25em;
+   
             object-fit: contain;
             img{
                 @include dislayPosition(f,center,center);
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
+                object-fit: contain;
+
                 box-shadow: $box-shadow-1;
                 border-radius: 1rem;
 

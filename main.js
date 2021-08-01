@@ -123,3 +123,32 @@ window.addEventListener('load',function(){
   });
 });
 
+
+/* Slider Gallery */
+
+const modal = document.querySelector('.modal');
+const previews = document.querySelectorAll('.item__img');
+const posters = document.querySelectorAll('.poster');
+const original = document.querySelector('.modal__img');
+//Games images
+const crash = ["crash_4_1","crash_4_2","crash_4_3","crash_4_4"];
+const littleNightmareII = ["Little_Nightmares_II_1","Little_Nightmares_II_2","Little_Nightmares_II_3","Little_Nightmares_II_4"];
+
+previews.forEach((preview,i) => {
+  preview.addEventListener("click",()=>{
+    modal.classList.add("open");
+    original.classList.add("open");
+    //Dynamic changes images
+    const imgOriginal = preview.getAttribute("data-original");
+    console.log(imgOriginal);
+    original.src= `${imgOriginal}${crash[i]}.jpg`;
+  });
+});
+
+modal.addEventListener("click",(e)=>{
+  if(e.target.classList.contains('modal')){
+    modal.classList.remove('open');
+    original.classList.remove("open");
+  }
+});  
+
