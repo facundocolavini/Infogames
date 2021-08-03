@@ -14,7 +14,7 @@ window.addEventListener('load',function(){
             breakpoint: 0,
             settings: {
               // Set to `auto` and provide item width to adjust to viewport
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               draggable: true,
 
@@ -61,7 +61,7 @@ window.addEventListener('load',function(){
     });
     new Glider(document.querySelector('.carousel__list--2'),{
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 2,
       draggable: true,
       dots: '.carousel__indicators',
       arrows: {
@@ -74,7 +74,7 @@ window.addEventListener('load',function(){
           breakpoint: 0,
           settings: {
             // Set to `auto` and provide item width to adjust to viewport
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 2,
             draggable: true,
 
@@ -121,6 +121,7 @@ window.addEventListener('load',function(){
           }
         ]
   });
+  
 });
 
 
@@ -151,4 +152,5 @@ modal.addEventListener("click",(e)=>{
     original.classList.remove("open");
   }
 });  
+
 

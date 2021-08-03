@@ -1,6 +1,7 @@
 @include media-up (xs){
-    .poster{
+    .card{
         width: 8em;
+        border: none;
         height: 10em;
         position:relative;
         display:flex;
@@ -8,10 +9,10 @@
         box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
         transition:0.5s ease-in-out;
     }
-    .poster:hover{
+    .card:hover{
         transform:translateY(0);
     }
-    .poster:before{
+    .card:before{
         content:"";
         position:absolute;
         top:0;
@@ -24,10 +25,10 @@
         transition: 0.5s all;
         opacity:0;
     }
-    .poster:hover:before{
+    .card:hover:before{
         opacity:1;
     }
-    .poster__img{
+    .card__img{
         width:100%;
         height: 100%;
         object-fit: cover;
@@ -35,7 +36,7 @@
         top:0;
         left:0;
     }
-    .poster__content{
+    .card__content{
         justify-self: center;
         position:relative;
         z-index: 999;
@@ -46,14 +47,14 @@
         text-align:left;
         padding:map-get($spacers,3) map-get($spacers,3) 0 map-get($spacers,3) ;
     }
-    .poster:hover .poster__content{
+    .card:hover .card__content{
         opacity:1;
         transform:translateY(-5px);
         transition: .6s ease-out all;
     }
 
 
-    .poster__title{
+    .card__title{
         display: block;
         margin:0;
         padding-bottom:map-get($spacers,3);
@@ -61,64 +62,15 @@
         font-weight: 600;
         font-size:.9em;
     }
-    .poster__description{
+    .card__description{
         font-weight: 400;
         letter-spacing: .1em;
         font-size:.7em;
     }
-    
-    .carousel__container{
-        font-size: $font-size-base;
-        position: relative;
-        margin-top:map-get($spacers,3);
-        margin-bottom:map-get($spacers,3);
-    }
-
-    .carousel__list{
-        overflow: hidden;
-       
-    }
-    .carousel__link{
-  
-        height: 100%;
-        width: 100%;
-    }
-    .carousel__img{
-        object-fit: cover;
-        height: 40em;
-        width: 30em;
-    }
-    .carousel_btn{
-        position:absolute;
-        display:block;
-        height: 5em;
-        width: 1em;
-        border:none;
-        top:calc(50% - 25%);
-        cursor:pointer;
-        color:map-get($colors,"white");
-        background: none;
-        text-align: center;
-        z-index: 999;
-    }
-    .carousel_btn:hover{
-   
-        transition:0.5s ease-in-out;
-        background: map-get($grays, 4 );
-    }
-    .carousel__before,.carousel__recomendation--before{
-        left:0;
-    }
-    .carousel__after,.carousel__recomendation--after{
-        right:0;
-    }
-   .glider-dots{
-        display: none;
-
-    }     
 }
+
 @include media-up (sm){
-    .poster{
+    .card{
         width: 10em;
         height: 12em;
         position:relative;
@@ -127,11 +79,11 @@
         box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
         transition:0.5s ease-in-out;
     }
-    .poster:hover{
+    .card:hover{
         transform:translateY(0);
 
     }
-    .poster:before{
+    .card:before{
         content:"";
         position:absolute;
         top:0;
@@ -144,10 +96,10 @@
         transition: 0.5s all;
         opacity:0;
     }
-    .poster:hover:before{
+    .card:hover:before{
         opacity:1;
     }
-    .poster__img{
+    .card__img{
         width:100%;
         height: 100%;
         object-fit: cover;
@@ -155,7 +107,7 @@
         top:0;
         left:0;
     }
-    .poster__content{
+    .card__content{
         justify-self: center;
         position:relative;
         z-index: 999;
@@ -166,77 +118,29 @@
         text-align:left;
         padding:map-get($spacers,3);
     }
-    .poster:hover .poster__content{
+    .card:hover .card__content{
         opacity:1;
         transform:translateY(-10px);
         transition: .6s ease-out all;
     }
 
-    .poster__title{
+    .card__title{
         margin:0;
         padding-bottom:map-get($spacers,4);
         letter-spacing: .1em;
         font-weight: 600;
         font-size:1.2em;
     }
-    .poster__description{
+    .card__description{
         font-weight: 500;
         letter-spacing: .1em;
         font-size:.8em;
     }
     
-    .carousel__container{
-        font-size: $font-size-base;
-        position: relative;
-        margin-top:map-get($spacers,4);
-        margin-bottom:map-get($spacers,4);
-    }
-
-    .carousel__list{
-        display: block;
-       
-    }
-    .carousel__link{
-  
-        height: 100%;
-        width: 100%;
-    }
-    .carousel__img{
-        object-fit: cover;
-        height: 40em;
-        width: 30em;
-    }
-    .carousel_btn{
-        position:absolute;
-        display:block;
-        height: 10em;
-        width: 1em;
-        border:none;
-        top:calc(50% - 40%);
-        cursor:pointer;
-        color:map-get($colors,"white");
-        background: none;
-        text-align: center;
-        z-index: 999;
-    }
-    .carousel_btn:hover{
-   
-        transition:0.5s ease-in-out;
-        background: map-get($grays, 4 );
-    }
-    .carousel__before,.carousel__recomendation--before{
-        left:0;
-    }
-    .carousel__after,.carousel__recomendation--after{
-        right:0;
-    }
-   .glider-dots{
-        display: none;
-
-    }     
 }
-@include media-up (md){
-    .poster{
+
+@include media-up(md){
+    .card{
         font-size: $font-size-base-md;
         width: 15em;
         height: 20em;
@@ -246,11 +150,11 @@
         box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
         transition:0.5s ease-in-out;
     }
-    .poster:hover{
+    .card:hover{
         transform:translateY(0px);
 
     }
-    .poster:before{
+    .card:before{
         content:"";
         position:absolute;
         top:0;
@@ -263,10 +167,10 @@
         transition: 0.5s all;
         opacity:0;
     }
-    .poster:hover:before{
+    .card:hover:before{
         opacity:1;
     }
-    .poster__img{
+    .card__img{
         width:100%;
         height: 100%;
         object-fit: cover;
@@ -274,91 +178,40 @@
         top:0;
         left:0;
     }
-    .poster__content{
-        justify-self: center;
+    .card__content{
+        justify-self: flex-end;
         position:relative;
         z-index: 999;
         color:map-get($colors,"white");
         opacity: 0;
+        height: 100%;
+        width: 100%;
         transform:translateY(0);
         transition: 0.5s all;
         text-align:left;
         padding:map-get($spacers,3);
     }
-    .poster:hover .poster__content{
+    .card:hover .card__content{
         opacity:1;
         transform:translateY(0px);
         transition: 1s ease-out all;
  
     }
-    .poster__title{
+    .card__title{
         margin:0;
         padding-bottom:map-get($spacers,4);
         letter-spacing: .1em;
         font-weight: 600;
         font-size:2em;
     }
-    .poster__description{
+    .card__description{
         font-weight: 500;
         letter-spacing: .1em;
-        font-size:1.2em;
+        font-size:1.3em;
     }
-    .carousel{
-   
-        margin-bottom:map-get($spacers,6);
-    }
-    .carousel__container{
-        font-size: $font-size-base;
-        position: relative;
-        margin-top:map-get($spacers,4);
-        margin-bottom:map-get($spacers,4);
-    }
-
-    .carousel__list{
-        overflow: hidden;
-       
-    }
-    .carousel__link{
-        height: 100%;
-        width: 100%;
-    }
-    .carousel__img{
-        object-fit: cover;
-        height: 40em;
-        width: 30em;
-    }
-    .carousel_btn{
-        position:absolute;
-        display:block;
-        height: 10em;
-        width: 2em;
-        border:none;
-        top:calc(50% - 25%);
-        cursor:pointer;
-        color:map-get($colors,"white");
-        background: none;
-        text-align: center;
-        z-index: 999;
-    }
-    .carousel_btn:hover{
-   
-        transition:0.5s ease-in-out;
-        background: map-get($grays, 4 );
-    }
-    .carousel__before,.carousel__recomendation--before{
-        left:0;
-    }
-    .carousel__after,.carousel__recomendation--after{
-        right:0;
-    }
-   .glider-dots{
-        display: none;
-
-    }     
 }
-@include media-up (lg){
-
-    .poster{
+@include media-up(lg){
+    .card{
         font-size: $font-size-base;
         width: 14em;
         height: 18em;
@@ -368,11 +221,11 @@
         box-shadow: $box-shadow-1;
         transition:0.5s ease-in-out;
     }
-    .poster:hover{
+    .card:hover{
         transform:translateY(0px);
 
     }
-    .poster:before{
+    .card:before{
         content:"";
         position:absolute;
         top:0;
@@ -385,10 +238,10 @@
         transition: 0.5s all;
         opacity:0;
     }
-    .poster:hover:before{
+    .card:hover:before{
         opacity:1;
     }
-    .poster__img{
+    .card__img{
         width:100%;
         height: 100%;
         object-fit: cover;
@@ -397,7 +250,7 @@
         left:0;
         box-shadow: $box-shadow-1;
     }
-    .poster__content{
+    .card__content{
         position:relative;
         z-index: 4;
         color:map-get($colors,"white");
@@ -407,73 +260,21 @@
         text-align:left;
         padding:map-get($spacers,3);
     }
-    .poster:hover .poster__content{
+    .card:hover .card__content{
         opacity:1;
         transform:translateY(0px);
         transition: 1s ease-out all;
     }
-    .poster__title{
+    .card__title{
         margin:0;
         padding-bottom:map-get($spacers,4);
         letter-spacing: .1em;
         font-weight: 600;
         font-size:1.8em;
     } 
-    .poster__description{
+    .card__description{
         font-weight: 500;
         letter-spacing: .1em;
         font-size:1.2em;
     }
-    
-    .carousel__container{
-        font-size: $font-size-base;
-        position: relative;
-        margin-top:map-get($spacers,4);
-        margin-bottom:map-get($spacers,4);
-    }
-    .carousel{
-        margin-bottom:map-get($spacers,6);
-    }
-    .carousel__list{
-        overflow: hidden;
-       
-    }
-    .carousel__link{
-  
-        height: 100%;
-        width: 100%;
-    }
-    .carousel__img{
-        object-fit: cover;
-        height: 20em;
-        width: 30em;
-    }
-    .carousel_btn{
-        position:absolute;
-        display:block;
-        height: 10em;
-        width: 2em;
-        border:none;
-        top:calc(50% - 25%);
-        cursor:pointer;
-        color:map-get($colors,"white");
-        background: none;
-        text-align: center;
-        z-index: 999;
-    }
-    .carousel_btn:hover{
-   
-        transition:0.5s ease-in-out;
-        background: map-get($grays, 4 );
-    }
-    .carousel__before,.carousel__recomendation--before{
-        left:0;
-    }
-    .carousel__after,.carousel__recomendation--after{
-        right:0;
-    }
-   .glider-dots{
-        display: none;
-
-    }     
 }

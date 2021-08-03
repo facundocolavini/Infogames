@@ -153,6 +153,8 @@
 @include media-up (lg){
     .gallery{
         font-size:$font-size-base;
+        margin:map-get($spacers,4)  map-get($spacers,4);
+        padding:0;
         .gallery__item{
             object-fit: cover;
             padding-bottom: map-get($spacers,3);
