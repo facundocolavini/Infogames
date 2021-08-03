@@ -1,6 +1,8 @@
 # Info Games
    #### This web project was made for the CorderHouse Web Development course as a final delivery, where technologies and libraries were implemented for the layout, in addition to    its design.
 
+# Project: https://facundocolavini.github.io/infogames/home
+
 # Pre requirements 📋
 ###### Libraries and used technology:
 
