@@ -38,7 +38,7 @@ body {
   scroll-behavior: smooth; }
 
 main {
-  margin-bottom: 10em; }
+  margin-bottom: 20em; }
 
 footer {
   position: relative;
@@ -3997,7 +3997,9 @@ body {
     transform: translateY(0);
     transition: 0.5s all;
     text-align: left;
-    padding: 1.2rem 1.2rem 0 1.2rem; }
+    padding: 0.75rem;
+    width: 100%;
+    height: 100%; }
   .card:hover .card__content {
     opacity: 1;
     transform: translateY(-5px);
@@ -4005,10 +4007,14 @@ body {
   .card__title {
     display: block;
     margin: 0;
+    padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     letter-spacing: .1em;
     font-weight: 600;
-    font-size: .9em; }
+    font-size: .9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .card__description {
     font-weight: 400;
     letter-spacing: .1em;
@@ -4055,7 +4061,9 @@ body {
     transform: translateY(0);
     transition: 0.5s all;
     text-align: left;
-    padding: 1.2rem; }
+    padding: 1rem;
+    width: 100%;
+    height: 100%; }
   .card:hover .card__content {
     opacity: 1;
     transform: translateY(-10px);
@@ -4065,7 +4073,10 @@ body {
     padding-bottom: 3rem;
     letter-spacing: .1em;
     font-weight: 600;
-    font-size: 1.2em; }
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .card__description {
     font-weight: 500;
     letter-spacing: .1em;
@@ -4077,8 +4088,6 @@ body {
     width: 15em;
     height: 20em;
     position: relative;
-    display: flex;
-    align-items: flex-end;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out; }
   .card:hover {
@@ -4125,7 +4134,11 @@ body {
     padding-bottom: 3rem;
     letter-spacing: .1em;
     font-weight: 600;
-    font-size: 2em; }
+    font-size: 2em;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .card__description {
     font-weight: 500;
     letter-spacing: .1em;
@@ -4137,8 +4150,6 @@ body {
     width: 14em;
     height: 18em;
     position: relative;
-    display: flex;
-    align-items: flex-end;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     transition: 0.5s ease-in-out; }
   .card:hover {
@@ -4168,26 +4179,35 @@ body {
   .card__content {
     position: relative;
     z-index: 4;
+    display: block;
     color: #fff;
     opacity: 0;
     transform: translateY(2px);
     transition: 0.5s all;
     text-align: left;
-    padding: 1.2rem; }
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem; }
   .card:hover .card__content {
     opacity: 1;
     transform: translateY(0px);
     transition: 1s ease-out all; }
   .card__title {
-    margin: 0;
+    text-align: left;
+    padding-top: 7rem;
     padding-bottom: 3rem;
     letter-spacing: .1em;
     font-weight: 600;
-    font-size: 1.8em; }
+    font-size: 1.7em;
+    line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .card__description {
     font-weight: 500;
     letter-spacing: .1em;
-    font-size: 1.2em; } }
+    font-size: 1.1em; } }
 
 @media screen and (min-width: 0) {
   .points {
@@ -4218,8 +4238,7 @@ body {
       width: 100%; }
     .points .points__header {
       font-family: "Fjalla One";
-      padding: 3rem 0 1.2rem 0;
-      white-space: nowrap;
+      padding: 3rem 1rem;
       letter-spacing: .1em;
       text-overflow: ellipsis;
       overflow: hidden; }
@@ -4511,7 +4530,7 @@ body {
     .points .points__title {
       font-size: 1.8em;
       font-weight: 600;
-      text-align: left; }
+      text-align: center; }
     .points .points__rating {
       border-radius: 1em;
       border: none; }
@@ -5028,7 +5047,9 @@ body {
 
 @media screen and (min-width: 992px) {
   .points {
-    font-size: 1.6rem; }
+    margin: 7rem auto;
+    font-size: 1.6rem;
+    width: 100%; }
     .points .points__img {
       object-fit: contain; }
       .points .points__img img {
@@ -5162,7 +5183,7 @@ body {
           border: none;
           opacity: 75%; }
   .information {
-    margin: 3rem 3rem;
+    margin: 10rem 3rem;
     font-size: 1.6rem; }
     .information .information__header {
       border-radius: 1em 1em 0 0;
@@ -5213,7 +5234,7 @@ body {
         vertical-align: middle;
         filter: drop-shadow(0px 1px 1px #0a0a0a); }
   .requirements {
-    margin: 3rem 3rem;
+    margin: 10rem 3rem;
     font-size: 1.6rem; }
     .requirements .requirements__header {
       border-radius: 1em 1em 0 0;
@@ -5247,8 +5268,8 @@ body {
         color: rgba(255, 255, 255, 0.6);
         padding-left: 0.4em; }
   .related {
-    margin: 3rem 3rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin: 10rem 3rem; }
     .related .related__header {
       border-radius: 1em 1em 0 0;
       background-color: rgba(0, 0, 0, 0.8);

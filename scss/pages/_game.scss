@@ -39,8 +39,7 @@
             font: {
                 family: $family-title;
             }
-            padding:map-get($spacers,4) 0 map-get($spacers,3) 0;
-            white-space: nowrap;
+            padding:map-get($spacers,4)  map-get($spacers,2);
             letter-spacing: .1em;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -288,6 +287,7 @@
             border-radius: 0 1em 1em 1em;
             background-color: map-get($whites,0);
             position:relative;
+         
         }  
         a{
             text-decoration: none;
@@ -369,7 +369,7 @@
         .points__title{
             font-size: 1.8em;
             font-weight: 600;
-            text-align: left;
+            text-align: center;
         }
         .points__rating{
             border-radius: 1em;
@@ -762,7 +762,7 @@
         }
     }
     .information{
-        margin:map-get($spacers,4)  map-get($spacers,4);
+        margin:map-get($spacers,6)  map-get($spacers,4);
         font-size:$font-size-base;
         .information__header{
             border-radius: 1em 1em 0 0;    
@@ -829,7 +829,7 @@
         }
     }
     .requirements{
-        margin:map-get($spacers,4)  map-get($spacers,4);
+        margin:map-get($spacers,6)  map-get($spacers,4);
         font-size:$font-size-base-md;
         .requirements__header{
             border-radius: 1em 1em 0 0;    
@@ -876,7 +876,7 @@
         }
     }
     .related{
-        margin:map-get($spacers,4)  map-get($spacers,4);
+        margin:map-get($spacers,6)  map-get($spacers,4);
         font-size:$font-size-base-md;
         .related__header{
             border-radius: 1em 1em 0 0;    
@@ -943,7 +943,9 @@
 
 @include media-up(lg){
     .points{
+        margin:map-get($spacers ,5) auto;
         font-size:$font-size-base;
+         width: 100%;
         .points__img{
             object-fit: contain;
             img{
@@ -1062,7 +1064,7 @@
     }
     
     .information{
-        margin:map-get($spacers,4)  map-get($spacers,4);
+        margin:map-get($spacers,6)  map-get($spacers,4);
         font-size:$font-size-base;
         .information__header{
             border-radius: 1em 1em 0 0;    
@@ -1128,7 +1130,7 @@
         }
     }
     .requirements{
-        margin:map-get($spacers,4)  map-get($spacers,4);
+        margin:map-get($spacers,6)  map-get($spacers,4);
         font-size:$font-size-base;
         .requirements__header{
             border-radius: 1em 1em 0 0;    
@@ -1175,8 +1177,8 @@
         }
     }
     .related{
-        margin:map-get($spacers,4)  map-get($spacers,4);
         font-size:$font-size-base;
+        margin:map-get($spacers,6)  map-get($spacers,4);
         .related__header{
             border-radius: 1em 1em 0 0;    
             background-color: map-get($grays,3);
