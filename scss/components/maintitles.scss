@@ -1,6 +1,5 @@
 @include media-up (xs){
     .title{
-
         font: {
             size: $font-size-base-xs;
             family:$family-title;
@@ -46,7 +45,6 @@
         }
     }
 }
-
 @include media-up (md){
 
     .title{
@@ -54,16 +52,13 @@
             size: $font-size-base-md;
             family:$family-title;
         }
-   
         @include dislayPosition(f,s-b,center);
-
         &__section{
             font: {
                 size: map-get($font-sizes-md,2);
             }
         }
         &__section--low{
-      
             font: {
                 size: map-get($font-sizes-md,2);
             }
@@ -76,7 +71,6 @@
 }
 @include media-up (lg){
     .title{
-
         font: {
             size: $font-size-base;
             family:$family-title;

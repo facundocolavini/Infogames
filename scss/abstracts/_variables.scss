@@ -36,10 +36,12 @@ $box-shadow-5: 0 0 10px #081937;
 $box-shadow-6: 0 0 10px #d1b200;
 $box-shadow-7: 0 0 10px $color-primary;
 
-$border-header: 1px solid $color-transparent-light-2;
 $shadow-drop-1: drop-shadow(0px 1px 1px #0a0a0a); /* use propertie filter */
 $shadow-drop-2: drop-shadow(0px 0px 2px #d1b200); /* use propertie filter */
+$border-header: 1px solid $color-transparent-light-2;
 $border-1: 3px outset $color-secodary-dark;
+$border-2: 2px solid $color-transparent-light-3;
+$text-shadow-1:0 0 10px;
 
 //Breakpoints
 $breakpoints: (

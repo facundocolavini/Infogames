@@ -1,4 +1,491 @@
 @import 'layout/header',
         'layout/navbar',
         'layout/footer';
-        
+
+
+
+@include media-up(xs){
+    .community{
+        font-size: $font-size-base-sm;
+        margin: map-get($spacers,4) map-get($spacers,1);
+        &__header{
+            @include dislayPosition(b,n,n);
+            .community__title{
+                padding:0;
+                font: {
+                    family: $family-title;
+                    weight:400;
+                    size: 2.5em;
+                }
+            }
+            .community__title--1{
+                font: {
+                    size:1.2em;
+                }
+                margin-top: map-get($spacers,3);
+                width: fit-content;
+                color:map-get($whites,3);
+                min-width: max-content;
+                padding: .25em .5em;
+                border-radius: .5em;
+                cursor: default;
+                transition: .3s background;
+                border: $border-2;
+            }
+            .community__title--1:hover{
+                background-color:map-get($whites,1);
+            }
+            .community__info{
+                color:map-get($whites,4);
+                text-shadow: $text-shadow-1;
+            }
+        }
+        .community__admin{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__user{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__subtitle{
+            margin-bottom: map-get($spacers,4);
+            margin-top: map-get($spacers,5);
+            color:map-get($whites,3);
+            font: {
+                family:$family-text;
+                size:1.5em;
+                weight:500;
+            }
+        }
+        .user__card{
+            @include dislayPosition(b,n,n);
+            margin-bottom: map-get($spacers,6);
+            width: fit-content;
+            width: 6em;
+            height: 6em;
+            text-align: center;
+            margin-right: map-get($spacers,3);
+        }
+        .user__avatar{ 
+            position: relative;
+            max-width: 10em;
+            width: 100%;
+            margin-bottom: .75rem;
+        }
+        .user__img{
+            border-radius: 50%;
+            background-position: center;
+            background-size: center;
+       
+            object-fit: cover;
+            width: 5em;
+            height: 5em;
+            box-shadow: $box-shadow-1;
+            cursor: pointer;
+        }
+        .user__info{
+            margin-top:map-get($spacers,3);
+        }
+        .user__alias{
+            display: block;
+            font-size: .9em;
+            width: 100%;
+            line-height: 1;
+            text-transform: lowercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: .25rem;
+        }
+        .user__rol{
+            font-size: 1em;
+            color:map-get($whites,3);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .user__img--users{
+            @include dislayPosition(f,center,center);
+            color:map-get($whites,3);
+            width: 5em;
+            height: 5em;
+
+        }
+    }    
+}
+@include media-up(sm){
+    .community{
+        font-size: $font-size-base-sm;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        &__header{
+            @include dislayPosition(f,s-b,center);
+            .community__title{
+                font: {
+                    family: $family-title;
+                    weight:400;
+                    size:2.5em;
+                }
+            }
+            .community__title--1{
+                color:map-get($whites,3);
+                min-width: max-content;
+                padding: .25em .5em;
+                border-radius: .5em;
+                cursor: default;
+                transition: .3s background;
+                border: $border-2;
+            }
+            .community__title--1:hover{
+                background-color:map-get($whites,1);
+            }
+            .community__info{
+                color:map-get($whites,4);
+                text-shadow: $text-shadow-1;
+            }
+        }
+        .community__admin{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__user{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__subtitle{
+            margin-bottom: map-get($spacers,4);
+            margin-top: map-get($spacers,5);
+            color:map-get($whites,3);
+            font: {
+                family:$family-text;
+                size:1.5em;
+                weight:500;
+            }
+        }
+        .user__card{
+            @include dislayPosition(b,n,n);
+            width: fit-content;
+            text-align: center;
+            margin-right: map-get($spacers,3);
+        }
+        .user__avatar{ 
+            position: relative;
+            max-width: 10em;
+            width: 100%;
+            margin-bottom: .75rem;
+        }
+        .user__img{
+            border-radius: 50%;
+            background-position: center;
+            background-size: center;
+       
+            object-fit: cover;
+            width: 7em;
+            height: 7em;
+            box-shadow: $box-shadow-1;
+            cursor: pointer;
+        }
+        .user__info{
+            margin-top:map-get($spacers,3);
+        }
+        .user__alias{
+            display: block;
+            font-size: .9em;
+            width: 100%;
+            line-height: 1;
+            text-transform: lowercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: .25rem;
+        }
+        .user__rol{
+            font-size: 1em;
+            color:map-get($whites,3);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .user__img--users{
+            @include dislayPosition(f,center,center);
+            color:map-get($whites,3);
+            width: 7em;
+            height: 7em;
+
+        }
+    }
+}
+@include media-up(md){
+    .community{
+        font-size: $font-size-base-md;
+        margin: map-get($spacers,5) map-get($spacers,3);
+        &__header{
+            @include dislayPosition(f,s-b,center);
+            .community__title{
+                padding: 0;
+                font: {
+                    family: $family-title;
+                    weight:400;
+                    size: 2.5em;
+                }
+            }
+            .community__title--1{
+                color:map-get($whites,3);
+                min-width: max-content;
+                padding: .25em .5em;
+                border-radius: .5em;
+                cursor: default;
+                transition: .3s background;
+                border: $border-2;
+            }
+            .community__title--1:hover{
+                background-color:map-get($whites,1);
+            }
+            .community__info{
+                color:map-get($whites,4);
+                text-shadow: $text-shadow-1;
+            }
+        }
+        .community__admin{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__user{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__subtitle{
+            margin-bottom: map-get($spacers,4);
+            margin-top: map-get($spacers,5);
+            color:map-get($whites,3);
+            font: {
+                family:$family-text;
+                size:1.5em;
+                weight:500;
+            }
+        }
+        .user__card{
+            @include dislayPosition(b,n,n);
+            width: fit-content;
+            text-align: center;
+            margin-right: map-get($spacers,3);
+        }
+        .user__avatar{ 
+            position: relative;
+            max-width: 10em;
+            width: 100%;
+            margin-bottom: .75rem;
+        }
+        .user__img{
+            border-radius: 50%;
+            background-position: center;
+            background-size: center;
+       
+            object-fit: cover;
+            width: 7em;
+            height: 7em;
+            box-shadow: $box-shadow-1;
+            cursor: pointer;
+        }
+        .user__info{
+            margin-top:map-get($spacers,3);
+        }
+        .user__alias{
+            display: block;
+            font-size: .9em;
+            width: 100%;
+            line-height: 1;
+            text-transform: lowercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: .25rem;
+        }
+        .user__rol{
+            font-size: 1em;
+            color:map-get($whites,3);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .user__img--users{
+            @include dislayPosition(f,center,center);
+            color:map-get($whites,3);
+            width: 7em;
+            height: 7em;
+
+        }
+    }
+}
+@include media-up(lg){
+    .community{
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        &__header{
+            @include dislayPosition(f,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+            .community__title{
+                font: {
+                    family: $family-title;
+                    weight:400;
+                    size: 2em;
+                }
+            }
+            .community__title--1{
+                color:map-get($whites,3);
+                min-width: max-content;
+                padding: .25em .5em;
+                border-radius: .5em;
+                cursor: default;
+                transition: .3s background;
+                border: $border-2;
+            }
+            .community__title--1:hover{
+                background-color:map-get($whites,1);
+            }
+            .community__info{
+                color:map-get($whites,4);
+                text-shadow: $text-shadow-1;
+            }
+        }   
+        .community__admin{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__user{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .community__subtitle{
+            margin-bottom: map-get($spacers,4);
+            margin-top: map-get($spacers,5);
+            color:map-get($whites,3);
+            font: {
+                family:$family-text;
+                size:1.5em;
+                weight:500;
+            }
+        }
+        .user__card{
+            @include dislayPosition(b,n,n);
+            width: fit-content;
+            text-align: center;
+            margin-right: map-get($spacers,3);
+        }
+        .user__avatar{ 
+            position: relative;
+            max-width: 10em;
+            width: 100%;
+            margin-bottom: .75rem;
+        }
+        .user__img{
+            border-radius: 50%;
+            background-position: center;
+            background-size: center;
+       
+            object-fit: cover;
+            width: 7em;
+            height: 7em;
+            box-shadow: $box-shadow-1;
+            cursor: pointer;
+        }
+        .user__info{
+            margin-top:map-get($spacers,3);
+        }
+        .user__alias{
+            display: block;
+            font-size: .9em;
+            width: 100%;
+            line-height: 1;
+            text-transform: lowercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: .25rem;
+        }
+        .user__rol{
+            font-size: 1em;
+            color:map-get($whites,3);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .user__img--users{
+            @include dislayPosition(f,center,center);
+            color:map-get($whites,3);
+            width: 7em;
+            height: 7em;
+
+        }
+    }
+
+   /*  .section__header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4rem;
+        margin-bottom: 0;
+    }
+    .section__info--box{
+        display: inline-block;
+        border: 2px solid var(--color-transparent-light-3);
+        border-radius: 1rem;
+        padding: .25rem .5rem;
+        color: var(--color-transparent-light-3);
+        font-family: var(--family-text-1);
+        font-size: 1.5rem;
+    }
+    .section__info--box-2{
+        color: var(--color-text);
+        text-shadow: 0 0 10px;
+    }
+    .comunity__title {
+        color: var(--color-transparent-light-3);
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        line-height: 1.4rem;
+        margin-top: 3rem;
+    }
+    .section__body{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,10rem);
+        grid-gap: 2rem;
+    }
+    .card{
+        text-align: center;
+    }
+    .card__picture{
+        width: 100%;
+        margin-bottom: .75rem;
+        object-fit: cover;
+    }
+    .card__img{
+        border-radius: 5rem;
+        box-shadow: var(--box-shadow);
+        width: 9rem;
+        height: 9rem;
+    }
+    .card__info{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card__title{
+        display: block;
+        font-size: 1.5rem;
+        width: 100%;
+        color:var(--color-text);
+        line-height: 1;
+        padding: .3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card__text{
+        font-size: 1.5rem;
+        color: var(--color-transparent-light-3);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } */
+}
