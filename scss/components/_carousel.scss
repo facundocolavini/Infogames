@@ -88,7 +88,7 @@
         height: 40em;
         width: 30em;
     }
-    .carousel_btn{
+    .carousel__btn{
         position:absolute;
         display:block;
         height: 5em;
@@ -101,15 +101,15 @@
         text-align: center;
         z-index: 999;
     }
-    .carousel_btn:hover{
+    .carousel__btn:hover{
    
         transition:0.5s ease-in-out;
-        background: map-get($grays, 4 );
+        background: map-get($grays,4);
     }
-    .carousel__before,.carousel__recomendation--before{
+    .carousel__before,.carousel__recomendation--before,.carousel__before--3,.carousel__before--4,.carousel__before--5{
         left:0;
     }
-    .carousel__after,.carousel__recomendation--after{
+    .carousel__after,.carousel__recomendation--after,.carousel__after--3,.carousel__after--4,.carousel__after--5{
         right:0;
     }
    .glider-dots{
@@ -171,7 +171,6 @@
         transform:translateY(-10px);
         transition: .6s ease-out all;
     }
-
     .poster__title{
         margin:0;
         padding-bottom:map-get($spacers,4);
@@ -206,7 +205,7 @@
         height: 40em;
         width: 30em;
     }
-    .carousel_btn{
+    .carousel__btn{
         position:absolute;
         display:block;
         height: 10em;
@@ -219,20 +218,19 @@
         text-align: center;
         z-index: 999;
     }
-    .carousel_btn:hover{
+    .carousel__btn:hover{
    
         transition:0.5s ease-in-out;
         background: map-get($grays, 4 );
     }
-    .carousel__before,.carousel__recomendation--before{
+    .carousel__before,.carousel__recomendation--before,.carousel__before--3,.carousel__before--4,.carousel__before--5{
         left:0;
     }
-    .carousel__after,.carousel__recomendation--after{
+    .carousel__after,.carousel__recomendation--after,.carousel__after--3,.carousel__after--4,.carousel__after--5{
         right:0;
     }
    .glider-dots{
         display: none;
-
     }     
 }
 @include media-up (md){
@@ -248,7 +246,6 @@
     }
     .poster:hover{
         transform:translateY(0px);
-
     }
     .poster:before{
         content:"";
@@ -327,7 +324,7 @@
         height: 40em;
         width: 30em;
     }
-    .carousel_btn{
+    .carousel__btn{
         position:absolute;
         display:block;
         height: 10em;
@@ -340,20 +337,19 @@
         text-align: center;
         z-index: 999;
     }
-    .carousel_btn:hover{
+    .carousel__btn:hover{
    
         transition:0.5s ease-in-out;
         background: map-get($grays, 4 );
     }
-    .carousel__before,.carousel__recomendation--before{
+    .carousel__before,.carousel__recomendation--before,.carousel__before--3,.carousel__before--4,.carousel__before--5{
         left:0;
     }
-    .carousel__after,.carousel__recomendation--after{
+    .carousel__after,.carousel__recomendation--after,.carousel__after--3,.carousel__after--4,.carousel__after--5{
         right:0;
     }
    .glider-dots{
         display: none;
-
     }     
 }
 @include media-up (lg){
@@ -436,10 +432,8 @@
     }
     .carousel__list{
         overflow: hidden;
-       
     }
     .carousel__link{
-  
         height: 100%;
         width: 100%;
     }
@@ -448,7 +442,7 @@
         height: 20em;
         width: 30em;
     }
-    .carousel_btn{
+    .carousel__btn{
         position:absolute;
         display:block;
         height: 10em;
@@ -461,19 +455,17 @@
         text-align: center;
         z-index: 999;
     }
-    .carousel_btn:hover{
-   
+    .carousel__btn:hover{
         transition:0.5s ease-in-out;
         background: map-get($grays, 4 );
     }
-    .carousel__before,.carousel__recomendation--before{
+    .carousel__before,.carousel__recomendation--before,.carousel__before--3,.carousel__before--4,.carousel__before--5{
         left:0;
     }
-    .carousel__after,.carousel__recomendation--after{
-        right:0;
+    .carousel__after,.carousel__recomendation--after,.carousel__after--3,.carousel__after--4,.carousel__after--5{
+        right:0ñ
     }
    .glider-dots{
         display: none;
-
     }     
 }

@@ -2,3 +2,406 @@
         'layout/navbar',
         'layout/footer';
         
+
+@include media-up(xs){
+    .form{
+        @include dislayPosition(b,n,n);
+        font-size: $font-size-base-xs;
+        margin:0;
+        width: 100%;
+        box-shadow: $box-shadow-2;
+        padding: map-get($spacers,4);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/images/login.png');
+
+        .form__header{
+            text-align: center;
+            margin-bottom:  map-get($spacers,4);
+        }
+        .form__title{
+            text-align: left;
+            font: {
+                size:3em;
+                family:$family-title;
+            }
+        }
+        .form__label{
+            color:map-get($whites, 3 );
+            line-height: 1;
+            font-size: 1.6em;
+            margin-bottom:map-get($spacers,3);
+        }
+        .form__input{
+            display: block;
+            padding-left: map-get($spacers,2);
+            margin-bottom: map-get($spacers,4);
+            background-color:map-get($whites, 1 );
+            width: 100%;
+            height: 3em;
+  
+            border: none;
+            font-size: 1.5em;
+            color: map-get($grays, 4 );
+            box-shadow: $box-shadow-2;
+            transition:all 0.3s ease
+        }
+        .form__input:focus {
+            border: none;
+            color: map-get($grays, 4 );
+            background: map-get($whites, 3 );
+            outline: none;
+            font-weight: 700;
+        }
+        .form__input:active {
+            border: none;
+            font-size:1.5em;
+            color:map-get($grays, 4 );
+        }
+        .form__button{
+            box-shadow: $box-shadow-1;
+            border: none;
+            font-size: 1.8em;
+            font-family: $family-title;
+            font-weight: 500;
+            height: 3em;
+            display:block;
+            width: 100%;
+            padding: 0 map-get($spacers, 3);
+            margin-top: map-get($spacers,5);
+            background: map-get($colors, "orange" );
+            transition: all .2s ease-in-out;
+        }
+        .form__button:hover{
+            transition: all .4s ease-in-out;
+            box-shadow: $box-shadow-7;
+        }
+    }
+    .singup{
+        font-size: $font-size-base-xs;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .singup__header--title{
+            padding: 0;
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .singup__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.5em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .singup__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 3em;
+            }
+        }
+    }
+}
+@include media-up(sm){
+    .form{
+        @include dislayPosition(b,n,n);
+        font-size: $font-size-base-sm;
+        margin: map-get($spacers,5)  map-get($spacers,3);
+        width: 95%;
+        box-shadow: $box-shadow-2;
+        padding: map-get($spacers,4);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/images/login.png');
+        .form__header{
+            text-align: center;
+            margin-bottom:  map-get($spacers,4);
+        }
+        .form__title{
+            text-align: left;
+            font: {
+                size:3em;
+                family:$family-title;
+            }
+        }
+        .form__label{
+            color:map-get($whites, 3 );
+            line-height: 1;
+            font-size: 1.5em;
+            margin-bottom:map-get($spacers,3);
+        }
+        .form__input{
+            display: block;
+            padding-left: map-get($spacers,2);
+            margin-bottom: map-get($spacers,4);
+            background-color:map-get($whites, 1 );
+            width: 60%;
+            height: 3em;
+            border: none;
+            font-size: 1.5em;
+            color: map-get($grays, 4 );
+            box-shadow: $box-shadow-2;
+            transition:all 0.3s ease
+        }
+        .form__input:focus {
+            border: none;
+         
+            color: map-get($grays, 4 );
+            background: map-get($whites, 3 );
+            outline: none;
+            font-weight: 700;
+        }
+        .form__input:active {
+            border: none;
+            font-size:1.5em;
+            color:map-get($grays, 4 );
+        }
+        .form__button{
+            box-shadow: $box-shadow-1;
+            border: none;
+            font-size: 1.8em;
+            font-family: $family-title;
+            font-weight: 500;
+            height: 3em;
+            display:block;
+            width: 60%;
+            padding: 0 map-get($spacers, 3);
+            margin-top: map-get($spacers,5);
+            background: map-get($colors, "orange" );
+            transition: all .2s ease-in-out;
+        }
+        .form__button:hover{
+            transition: all .4s ease-in-out;
+            box-shadow: $box-shadow-7;
+        }
+    }
+    .singup{
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .singup__header--title{
+            padding: 0;
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .singup__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .singup__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 2em;
+            }
+        }
+    }
+}
+@include media-up(md){
+    .form{
+        @include dislayPosition(b,n,n);
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) auto;
+        width: 80%;
+        box-shadow: $box-shadow-2;
+        padding: map-get($spacers,4);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/images/login.png');
+        .form__header{
+            text-align: left;
+            margin-bottom:  map-get($spacers,4);
+        }
+        .form__title{
+            text-align: left;
+            font: {
+                size:2em;
+                family:$family-title;
+            }
+        }
+        .form__label{
+            color:map-get($whites, 3 );
+            line-height: 1;
+            font-size: 1em;
+            margin-bottom:map-get($spacers,3);
+        }
+        .form__input{
+            display: block;
+            padding-left: map-get($spacers,2);
+            margin-bottom: map-get($spacers,4);
+            background-color:map-get($whites, 1 );
+            width: 50%;
+            height: 5rem;
+            opacity: .7;
+            border: none;
+            font-size: 1em;
+            color: map-get($grays, 4 );
+            box-shadow: $box-shadow-1;
+            transition:all 0.3s ease
+        }
+        .form__input:focus {
+            border: none;
+            font-size: $family-text;
+            color: map-get($grays, 4 );
+            background: map-get($whites, 2 );
+            outline: none;
+            font-weight: 700;
+        }
+        .form__input:active {
+            border: none;
+            font-size:1em;
+            color:map-get($grays, 4 );
+        }
+        .form__button{
+            box-shadow: $box-shadow-1;
+            border: none;
+            font-size: 1.5em;
+            font-family: $family-title;
+            font-weight: 500;
+            height: 2em;
+            display:block;
+            width: 50%;
+            padding: 0 1rem;
+            margin-top: map-get($spacers,5);
+            background: map-get($colors, "orange" );
+            transition: all .2s ease-in-out;
+        }
+        .form__button:hover{
+            transition: all .4s ease-in-out;
+            box-shadow: $box-shadow-7;
+        }
+
+    }
+    .singup{
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .singup__header--title{
+            padding: 0;
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .singup__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.2em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .singup__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 2.5em;
+            }
+        }
+    }
+
+}
+@include media-up(lg){
+    .form{
+        @include dislayPosition(b,n,n);
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) auto;
+        width: 60%;
+        box-shadow: $box-shadow-2;
+        padding: map-get($spacers,4);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/images/login.png');
+        .form__header{
+            text-align: left;
+            margin-bottom:  map-get($spacers,4);
+        }
+        .form__title{
+            text-align: left;
+            font: {
+                size:2em;
+                family:$family-title;
+            }
+        }
+        .form__label{
+            color:map-get($whites, 3 );
+            line-height: 1;
+            font-size: 1em;
+            margin-bottom:map-get($spacers,3);
+        }
+        .form__input{
+            display: block;
+            padding-left: map-get($spacers,2);
+            margin-bottom: map-get($spacers,4);
+            background-color:map-get($whites, 1 );
+            width: 50%;
+            height: 5rem;
+            opacity: .7;
+            border: none;
+            font-size: 1em;
+            color: map-get($grays, 4 );
+            box-shadow: $box-shadow-1;
+            transition:all 0.3s ease
+        }
+        .form__input:focus {
+            border: none;
+            font-size: $family-text;
+            color: map-get($grays, 4 );
+            background: map-get($whites, 2 );
+     
+            outline: none;
+            font-weight: 700;
+        }
+        .form__input:active {
+            border: none;
+            font-size:1em;
+            color:map-get($grays, 4 );
+        }
+        .form__button{
+            box-shadow: $box-shadow-1;
+            border: none;
+            font-size: 1.5em;
+            font-family: $family-title;
+            font-weight: 500;
+            height: 2em;
+            display:block;
+            width: 50%;
+            padding: 0 1rem;
+            margin-top: map-get($spacers,5);
+            background: map-get($colors, "orange" );
+            transition: all .2s ease-in-out;
+        }
+        .form__button:hover{
+            transition: all .4s ease-in-out;
+            box-shadow: $box-shadow-7;
+        }
+    }
+    .singup{
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .singup__header--title{
+            padding: 0;
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .singup__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.2em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .singup__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 2.5em;
+            }
+        }
+    }
+}

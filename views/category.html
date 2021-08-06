@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Info Games es tu fuente de reseñas, demostraciones, actualizaciones sobre todos tus juegos favoritos.">
+    <meta name="keywords" content="noticias pc gaming comunidad juegos lanzamientos">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Glider.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Info Games</title>
@@ -22,7 +26,7 @@
                 </h1>
             </header>
         </div>
-        <div class="row">
+        <div class="row container-fluid">
             <div class="col-12 col-lg col-md-1 m-0 p-0 ">
                 <nav id="top" class="nav ">  
                     <ul class="nav__ul">
@@ -34,173 +38,309 @@
                     </ul>
                 </nav>
             </div>
-            
-            <main class="main col-12 col-md-11 col-lg" >
-                <div class="row carousel__container">
-                    <header class="title">
-                        <h2 class="title__section">Shooter</h2>
-                        <a class="title__section--low" href="./views/category.html">Ver Todos</a>
-                    </header>
-                    <button class="carousel__btn carousel__btn--left" id="left-btn-shooter" role="button"><img src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
-                    <div class="carousel__wrapper carousel__wrapper--3">
-                        <div class="carousel">
-
-
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
+            <main class="main col-12 col-md-11 col-lg p-0" >   
+                <header class="title">
+                    <h2 class="title__section">Shooter</h2>
+                    <a class=" title__section title__section--low" href="category.html">Ver Todos</a>
+                </header>
+                <div class="carousel ">
+                    <div class="carousel__container">
+                        <button class="carousel__btn carousel__before" arial-label="before"  role="button"><img loading="lazy" src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
+                        <div class="carousel__list ">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Little_Nightmare_II/index.html" >
+                                    <div  class="poster">
+                                        <img loading="lazy"  class="poster__img img-fluid" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Little Nightmares II</h1>
+                                            <p class="poster__description">Un joven atrapado en un mundo distorsionado por una malvada transmisión.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Ori and the will of the wisps</h1>
+                                            <p class="poster__description">Comienza un nuevo viaje por un mundo enorme y exótico.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                            <div class="carousel__element">
+                                <a href="../games/fight/Batman_Arkham_Asylum/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Batman Arkham Asylum</h1>
+                                            <p class="poster__description">Lucha y recorre un Estados Unidos pospandémico letal.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html#" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">  
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Metro Exodus</h1>
+                                            <p class="poster__description">Huye de las ruinas devastadas del metro de Moscú y embárcate en un viaje épico.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
+                            <div class="carousel__element">
+                                <a href="../games/shooter/Doom_Eternal/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="doom eternal">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Doom Eternal</h1>
+                                            <p class="poster__description">Ponte en la piel del Slayer en una épica campaña para un jugador.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
+                            <div class="carousel__element">
+                                <a href="../games/fight/Dragon_Ball_Fighterz/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Dragon Ball Fighterz</h1>
+                                            <p class="poster__description">Espectaculares luchas e interminables con luchadores superpoderosos.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
+                            <div class="carousel__element">
+                                <a href="../games/shooter/FEAR_2/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">F.E.A.R 2</h1>
+                                            <p class="poster__description">Tendrás el papel del Sargento Michael Becket y tu misión rutinaria se convertirá en una lucha.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="Doom eternal">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel__btn carousel__btn--right" id="right-btn-shooter" role="button"><img src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
-                </div>
-                <div class="row carousel__container">
-                    <header class="title">
-                        <h2 class="title__section">Aventura</h2>
-                        <a class="title__section--low" href="./views/category.html">Ver Todos</a>
-                    </header>
-                    <button class="carousel__btn carousel__btn--left" id="left-btn-adventure" role="button"><img src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
-                    <div class="carousel__wrapper carousel__wrapper--4">
-                        <div class="carousel">
-
-
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
-                                </a>
-                            </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
-                                </a>
-                            </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
-                                </a>
-                            </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">
-                                </a>
-                            </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
-                                </a>
-                            </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
-                                </a>
-                            </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
-                                </a>
-                            </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="Doom eternal">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Crash_Bandicoot_4/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Crash Bandicoot 4 Its About Time</h1>
+                                            <p class="poster__description">Neo Cortex y N. Tropy regresaron a las andadas.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
+                        <button class="carousel__btn carousel__after" arial-label="after"  role="button"><img loading="lazy" src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
                     </div>
-                    <button class="carousel__btn carousel__btn--right" id="right-btn-adventure" role="button"><img src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
-                </div>
-                <div class="row carousel__container">
-                    <header class="title">
-                        <h2 class="title__section">Pelea</h2>
-                        <a class="title__section--low" href="./views/category.html">Ver Todos</a>
-                    </header>
-                    <button class="carousel__btn carousel__btn--left" id="left-btn-fight" role="button"><img src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
-                    <div class="carousel__wrapper carousel__wrapper--5">
-                        <div class="carousel">
-
-
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
+                </div>    
+                <header class="title">
+                    <h2 class="title__section">Aventura</h2>
+                    <a class=" title__section title__section--low" href="category.html">Ver Todos</a>
+                </header>
+                <div class="carousel">
+                    <div class="carousel__container">
+                        <button class="carousel__btn carousel__before carousel__recomendation--before" arial-label="before"  role="button"><img loading="lazy" src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
+                        <div class="carousel__list carousel__list--2">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Little_Nightmare_II/index.html" >
+                                    <div  class="poster">
+                                        <img loading="lazy" class="poster__img img-fluid" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Little Nightmares II</h1>
+                                            <p class="poster__description">Un joven atrapado en un mundo distorsionado por una malvada transmisión.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Ori and the will of the wisps</h1>
+                                            <p class="poster__description">Comienza un nuevo viaje por un mundo enorme y exótico.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                            <div class="carousel__element">
+                                <a href="../games/fight/Batman_Arkham_Asylum/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Batman Arkham Asylum</h1>
+                                            <p class="poster__description">Lucha y recorre un Estados Unidos pospandémico letal.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html#" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">  
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Metro Exodus</h1>
+                                            <p class="poster__description">Huye de las ruinas devastadas del metro de Moscú y embárcate en un viaje épico.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
+                            <div class="carousel__element">
+                                <a href="../games/shooter/Doom_Eternal/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="doom eternal">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Doom Eternal</h1>
+                                            <p class="poster__description">Ponte en la piel del Slayer en una épica campaña para un jugador.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
+                            <div class="carousel__element">
+                                <a href="../games/fight/Dragon_Ball_Fighterz/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Dragon Ball Fighterz</h1>
+                                            <p class="poster__description">Espectaculares luchas e interminables con luchadores superpoderosos.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
+                            <div class="carousel__element">
+                                <a href="../games/shooter/FEAR_2/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">F.E.A.R 2</h1>
+                                            <p class="poster__description">Tendrás el papel del Sargento Michael Becket y tu misión rutinaria se convertirá en una lucha.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
-                            <div class="game ">
-                                <a class="game__link" href="#"> 
-                                    <img class="game__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="Doom eternal">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Crash_Bandicoot_4/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Crash Bandicoot 4 Its About Time</h1>
+                                            <p class="poster__description">Neo Cortex y N. Tropy regresaron a las andadas.</p>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
+                        <button class="carousel__btn carousel__after carousel__recomendation--after" arial-label="after"  role="button"><img loading="lazy" src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
                     </div>
-                    <button class="carousel__btn carousel__btn--right" id="right-btn-fight" role="button"><img src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
-                </div>
+                </div>    
+                <header class="title">
+                    <h2 class="title__section">Pelea</h2>
+                    <a class=" title__section title__section--low" href="category.html">Ver Todos</a>
+                </header>
+                <div class="carousel ">
+                    <div class="carousel__container">
+                        <button class="carousel__btn carousel__before--3" arial-label="before"  role="button"><img loading="lazy" src="../assets/icons/left-arrow.svg" alt="left arrow"></button>
+                        <div class=" carousel__list carousel__list--3">
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Little_Nightmare_II/index.html" >
+                                    <div  class="poster">
+                                        <img loading="lazy"  class="poster__img img-fluid" src="../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Little Nightmares II</h1>
+                                            <p class="poster__description">Un joven atrapado en un mundo distorsionado por una malvada transmisión.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Ori and the will of the wisps</h1>
+                                            <p class="poster__description">Comienza un nuevo viaje por un mundo enorme y exótico.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/fight/Batman_Arkham_Asylum/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Batman Arkham Asylum</h1>
+                                            <p class="poster__description">Lucha y recorre un Estados Unidos pospandémico letal.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Ori_And_The_Will_Of_The_wisps/index.html#" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">  
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Metro Exodus</h1>
+                                            <p class="poster__description">Huye de las ruinas devastadas del metro de Moscú y embárcate en un viaje épico.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/shooter/Doom_Eternal/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="doom eternal">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Doom Eternal</h1>
+                                            <p class="poster__description">Ponte en la piel del Slayer en una épica campaña para un jugador.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/fight/Dragon_Ball_Fighterz/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Dragon Ball Fighterz</h1>
+                                            <p class="poster__description">Espectaculares luchas e interminables con luchadores superpoderosos.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/shooter/FEAR_2/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy" class="poster__img" src="../games/shooter/FEAR_2/images/fear2.jpg" alt="FEAR 2">
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">F.E.A.R 2</h1>
+                                            <p class="poster__description">Tendrás el papel del Sargento Michael Becket y tu misión rutinaria se convertirá en una lucha.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel__element">
+                                <a href="../games/adventure/Crash_Bandicoot_4/index.html" >
+                                    <div class="poster">
+                                        <img loading="lazy"  class="poster__img" src="../games/adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4">   
+                                        <div class="poster__content">
+                                            <h1 class="poster__title">Crash Bandicoot 4 Its About Time</h1>
+                                            <p class="poster__description">Neo Cortex y N. Tropy regresaron a las andadas.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel__btn carousel__after--3" arial-label="after"  role="button"><img loading="lazy" src="../assets/icons/right-arrow.svg" alt="right arrow"></button>
+                    </div>
+                </div>    
             </main>
         </div>
-        
         <div class="row d-none d-md-block d-lg-block">
             <!-- Footer -->
             <footer class="row col-md col-lg footer">
@@ -214,7 +354,9 @@
             </footer>
         </div>  
     </div>
-    <script src="../main.js"></script>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

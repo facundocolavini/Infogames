@@ -4,18 +4,19 @@
         font-size: $font-size-base-xs;
         background-color: map-get($colors, "orange");
         box-shadow: map-get($shadows,1);
-        height: 4.5em;
+        padding: 0 map-get($spacers,3);
+        height: 4em;
         @include dislayPosition(f,s-b,center);
         &__link{
             box-sizing: border-box;
             height: 3.5 * $font-size-base-xs;
             width: 3.5 * $font-size-base-xs;
 
-            padding-right: map-get($spacers,2\.5);
         }
         &__img{
-            height: 100%;
-            width: 100%;
+            height: 3em;
+            width: 3em;
+       
             background-position: center;
             object-fit: contain;         
             
@@ -51,6 +52,7 @@
         background-color: map-get($colors, "orange");
         box-shadow: map-get($shadows,1);
         @include dislayPosition(f,s-b,center);
+        padding: 0 map-get($spacers,4);
         height: 5em;
         &__link{
             height: 3.5em;

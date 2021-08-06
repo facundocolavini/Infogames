@@ -1,0 +1,110 @@
+@import 'layout/header',
+        'layout/navbar',
+        'layout/footer';
+
+@import 'components/accordion';
+
+@include media-up(xs){
+    .aboutus{
+        font-size: $font-size-base-xs;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .aboutus__header--title{
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .aboutus__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.5em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .aboutus__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 3em;
+            }
+        }
+    }
+}
+@include media-up(sm){
+    .aboutus{
+        font-size: $font-size-base-sm;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .aboutus__header--title{
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .aboutus__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.5em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .aboutus__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 3em;
+            }
+        }
+    }
+}
+@include media-up(md){
+    .aboutus{
+        font-size: $font-size-base-md;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .aboutus__header--title{
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .aboutus__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.2em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .aboutus__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 2.5em;
+            }
+        }
+    }
+}
+@include media-up(lg){
+    .aboutus{
+        font-size: $font-size-base;
+        margin: map-get($spacers,5) map-get($spacers,1);
+        .aboutus__header--title{
+            @include dislayPosition(ib,s-b,center);
+            margin-bottom: map-get($spacers,5) ;
+        }
+        .aboutus__description{
+            color: map-get($whites,3);
+            font-family: $family-text;
+            font-size: 1.2em;
+            margin-top: .5em;
+            padding:0;
+            line-height: 1.4;
+        }
+        .aboutus__title{
+            padding:0;
+            font: {
+                family: $family-title;
+                weight:400;
+                size: 2.5em;
+            }
+        }
+    }
+}

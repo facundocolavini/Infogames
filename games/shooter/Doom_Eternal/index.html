@@ -4,194 +4,324 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NUEVO CAROUSEL -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../../../css/style.css">
     <title>Info Games</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="../../../home.html">
-                <img class="header__imgLogo" src="../../../assets/icons/logo.svg" alt="brand">
-            </a>
-            <p class="header__textLogo--info">INFO<span class="header__textLogo--games">GAMES</span></p>
-        </header>
-        <!--nav -->
-        <nav id="top" class="nav">  
-            <ul>
-                <li><a href="../../../home.html"><img loading="lazy" class="nav__icons" src="../../../assets/icons/home.svg" alt="home icon"><span class="nav__text">HOME</span></a></li>
-                <li><a href="../../../views/category.html"><img loading="lazy" class="nav__icons" src="../../../assets/icons/palanca-de-mando.svg" alt="category icon"><span class="nav__text">CATEGORIAS</span></a></li>
-                <li><a href="../../../views/community.html"><img loading="lazy" class="nav__icons" src="../../../assets/icons/multiple-users-silhouette.svg" alt="comunity icon"><span class="nav__text">COMUNIDAD</span></a></li>
-                <li><a href="../../../views/aboutus.html"><img loading="lazy" class="nav__icons" src="../../../assets/icons/signo-de-pregunta.svg" alt="help icon"><span class="nav__text">AYUDA</span></a></li>
-                <li><a href="../../../views/singup.html"><img loading="lazy" class="nav__icons" src="../../../assets/icons/forma-de-usuario.svg" alt="singup icon"><span class="nav__text">REGISTRATE</span></a></li>
-            </ul>
-        </nav>
-        <!-- main -->
-        <main class="main">
-            <section class="section__wrapper">
-                <article class="article">
-                    <div class="article__content">
-                        <img loading="lazy" class="article__content__image-game"src="./images/doom_eternal.jpg" alt="image game">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="header">
+                <a class="header__link" href="../../../home.html">
+                    <img loading="lazy" class="header__img" src="../../../assets/icons/logo.svg" alt="brand">
+                </a>
+                <h1 class="header__text">
+                    INFO<span class="header__text--games">GAMES</span>
+                </h1>
+            </header>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-12 col-lg  col-md-1 m-0 p-0 ">
+                <nav class="nav ">  
+                    <ul class="nav__ul">
+                        <li class="nav__item"><a class="nav__link" href="../../../home.html"><div class="home" ></div><span class="nav__text">HOME</span></a></li>
+                        <li class="nav__item"><a class="nav__link" href="../../../views/category.html"><div class="joystick" ></div><span class="nav__text">CATEGORIAS</span></a></li>
+                        <li class="nav__item"><a class="nav__link" href="../../../views/community.html"><div class="users"></div><span class="nav__text">COMUNIDAD</span></a></li>
+                        <li class="nav__item"><a class="nav__link" href="../../../views/aboutus.html"><div class="question"></div><span class="nav__text">AYUDA</span></a></li>
+                        <li class="nav__item"><a class="nav__link" href="../../../views/singup.html"><div class="user"></div><span class="nav__text">REGISTRATE</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="main col-12 col-md-11 col-lg" >
+                <div class="points gap-3 row">
+                    <div class="points__img">
+                        <img loading="lazy" class="img-fluid" src="./images/doom_eternal.jpg" alt="doom eternal">
                     </div>
-                    <div class="article__content ">
-                        <header class="article__header">
-                            <h1>Doom Eternal</h1>
+                    <div class="points__score col-lg p-0 m-0 ">
+                        <header class="points__header ">
+                            <h1 class="points__title">Doom Eternal</h1>
                         </header>
-                        <div class="article__rating">
-                            <div class="article__rating-item article__rating-item--1">
-                                <img loading="lazy" class="article__rating-icon"src="../../../assets/icons/star.svg" alt="start svg">
-                                <p class="article__rating-total">9</p>
-                                <p class="article__rating-min">/ 10</p>
+                        <div class="points__rating  row ">
+                            <div class="points__item points__item--start  ">
+                                <img loading="lazy" class="points__rating__img--start "src="../../../assets/icons/star.svg" alt="start svg">
+                                <div class="points__rating__content">
+                                    <p class="points__rating__content--total">9</p>
+                                    <p class="points__rating__content--min ">/ 10</p>
+                                </div>
                             </div>
-                            <div class="article__rating-item">
-                                <p class="article__rating-type">JUGABILIDAD</p>
-                                <p class="article__rating-points">9</p>
+                            <div class="points__item col-4 col-sm-4 col-md-4 col-lg-4">
+                                <p class="points__area">JUGABILIDAD</p>
+                                <p class="points__number">9</p>
                             </div>
-                            <div class="article__rating-item">
-                                <p class="article__rating-type">HISTORIA</p>
-                                <p class="article__rating-points">9</p>
+                            <div class="points__item col-4 col-sm-4 col-md-4 col-lg-4">
+                                <p class="points__area">HISTORIA</p>
+                                <p class="points__number">8</p>
                             </div>
-                            <div class="article__rating-item">
-                                <p class="article__rating-type">GRÁFICOS</p>
-                                <p class="article__rating-points">9</p>
+                            <div class="points__item col-4 col-sm-4 col-md-4 col-lg-4">
+                                <p class="points__area">GRÁFICOS</p>
+                                <p class="points__number">9</p>
+                            </div>
+                            <div class="points__item ">
+                                <p class="points__text">
+                                    Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad. No le tienen miedo a nada... salvo a ti.    
+                                </p>
                             </div>
                         </div>
-                        <p class="article__text">Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad. No le tienen miedo a nada... salvo a ti.</p>
-                        <div class="article__btns">
-                            <button class="article__btn article__btn--1">
-                                <img loading="lazy" class="article__btn-icon" src="../../../assets/icons/youtube.svg" alt="icon play">
+                        <div class="points__item points__item--btns row">
+                            <a href="https://www.youtube.com/watch?v=67Fe5-NuSUg" target="blank" class="points__btn--gameplay col-12">
+                                <img loading="lazy" class="points__icon" src="../../../assets/icons/youtube.svg" alt="icon play">
                                 Gameplay
-                            </button>
-                            <a class="article__btn article__btn--2" href="https://store.steampowered.com/app/782330/DOOM_Eternal/" target="blank"><img loading="lazy" class="article__btn-icon" src="../../../assets/icons/buy.svg" alt="icon buy"> Comprar</a>
+                            </a>
+                            <a class="points__btn--buy col-12 " href="https://store.steampowered.com/app/782330/DOOM_Eternal/" target="blank"><img loading="lazy" class="points__icon" src="../../../assets/icons/buy.svg" alt="icon buy"> Comprar</a>
                         </div>
                     </div>
-                </article>
-            </section>
-            <!-- make photo gallery with modal JS y CSS -->
-            <section class="section__wrapper">
-                <div class="gallery">
-                    <img class="gallery__images" loading="lazy" src="./images/doom_eternal_1.jpg" alt="doom eternal">
-                    <img class="gallery__images" loading="lazy" src="./images/doom_eternal_2.jpg" alt="doom eternal"> 
-                    <img class="gallery__images" loading="lazy" src="./images/doom_eternal_3.jpg" alt="doom eternal">
-                    <img class="gallery__images" loading="lazy" src="./images/doom_eternal_4.jpg" alt="doom eternal"> 
                 </div>
-            </section>
-            <!-- Related Games Section -->
-            <section class="section__wrapper">
-                <div class="information__header">
-                    <h1 class="information__title">Información del juego</h1>
-                </div>
-                <div class="information__body">
-                    <div class="subsection">
-                        <p class="subsection__text">Fecha de Lanzamiento:<span class="subsection__text--2">20/03/2020</span></p>
-                        <p class="subsection__text">Plataforma:<span class="subsection__text--2">PC</span></p>
-                        <p class="subsection__text">Idioma/Textos: 
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/espana.svg" alt="españa">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/estados-unidos-de-america.svg" alt="eeuu">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/francia.svg" alt="francia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/italia.svg" alt="italia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/portugal.svg" alt="portugal">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/rusia.svg" alt="rusia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/alemania.svg" alt="aleman">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/japon.svg" alt="japones">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/polonia.svg" alt="polaco">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/china.svg" alt="chino">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/republica-checa.svg" alt="checo">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/brasil.svg" alt="brasil">
-                        </p>
-                        <p class="subsection__text">Idioma/Audios: 
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/espana.svg" alt="españa">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/estados-unidos-de-america.svg" alt="eeuu">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/francia.svg" alt="francia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/italia.svg" alt="italia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/portugal.svg" alt="portugal">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/rusia.svg" alt="rusia">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/alemania.svg" alt="aleman">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/japon.svg" alt="japones">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/polonia.svg" alt="polaco">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/china.svg" alt="chino">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/republica-checa.svg" alt="checo">
-                            <img loading="lazy" class="subsection__icon" src="../../../assets/icons/brasil.svg" alt="brasil">
-                        </p>
-                        <p class="subsection__text">Peso:<span class="subsection__text--2">12,0 GB</span></p>
-                    </div>  
-                    <div class="subsection">
-                        <p class="subsection__text">Disponible en: 
-                            <a href="https://store.steampowered.com/" target="blank"><img loading="lazy" class="subsection__icon--1" src="../../../assets/icons/steam.svg" alt="steam"></a>
-                        </p>  
-                    </div>  
-                </div>
-            </section>
-            <!-- Requirements section -->
-            <section class="section__wrapper">
-                <div class="requirements__header">
-                    <h1 class="requirements__title">Requisitos del juego</h1>
-                </div>
-                <div class="requirements__body">
-                    <div class="subsection">
-                        <h3 class="subsection__subtitle">MINIMO:</h3>
-                        <p class="subsection__text">SO:<span class="subsection__text--2">64-bit Windows 7 / 64-Bit Windows 10</span></p> 
-                        <p class="subsection__text">Procesador:<span class="subsection__text--2"> Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better</span></p> 
-                        <p class="subsection__text">Memoria:<span class="subsection__text--2">8 GB de RAM</span></p>
-                        <p class="subsection__text">Gráficos:<span class="subsection__text--2"> NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)</span></p>
-                        <p class="subsection__text">DirectX: <span class="subsection__text--2">11</span></p>
-                        <p class="subsection__text">Disco: <span class="subsection__text--2">50 GB de espacio disponible</span></p>
+                <div class="gallery row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 gallery__item">
+                        <img data-original="./images/doom_eternal_1.jpg" class="item__img img-fluid" src="./images/doom_eternal_1.jpg" loading="lazy" alt="image game">
                     </div>
-                    <div class="subsection">
-                        <h3 class="subsection__subtitle">RECOMENDADO:</h3>
-                        <p class="subsection__text">SO:<span class="subsection__text--2">64-bit Windows 10</span></p>
-                        <p class="subsection__text">Procesador:<span class="subsection__text--2">Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better</span></p>
-                        <p class="subsection__text">Memoria:<span class="subsection__text--2">8 GB de RAM</span></p>
-                        <p class="subsection__text">Gráficos:<span class="subsection__text--2">NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)</span></p>
-                        <p class="subsection__text">DirectX:<span class="subsection__text--2">11</span></p>
-                        <p class="subsection__text">Disco:<span class="subsection__text--2">50 GB de espacio disponible</span></p>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 gallery__item">
+                        <img data-original="./images/doom_eternal_2.jpg" class="img-fluid item__img" src="./images/doom_eternal_2.jpg" loading="lazy" alt="image game">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 gallery__item">
+                        <img data-original="./images/doom_eternal_3.jpg" class="img-fluid item__img" src="./images/doom_eternal_3.jpg" loading="lazy" alt="image game" >
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 gallery__item">
+                        <img data-original="./images/doom_eternal_4.jpg" class="img-fluid item__img" src="./images/doom_eternal_4.jpg" loading="lazy" alt="image game">
+                    </div>
+                </div>  
+                <div class="modal">
+                    <img loading="lazy" src="" class=" img_fluid modal__img" alt="full image">
+                </div>
+                <div class="information">
+                    <div class="row information__header">
+                        <h1 class="information__title">Información del juego</h1>
+                    </div>
+                    <div class="row">
+                        <div class="information__content information__content--1 col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="information__text">Fecha de Lanzamiento:<span class="information__text--2">20/03/2020</span></div>
+                            <div class="information__text">Plataforma:<span class="information__text--2">PC</span></div>
+                            <div class="information__text ">Idioma/Textos: 
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/espana.svg" alt="españa">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/estados-unidos-de-america.svg" alt="eeuu">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/francia.svg" alt="francia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/italia.svg" alt="italia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/portugal.svg" alt="portugal">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/rusia.svg" alt="rusia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/alemania.svg" alt="aleman">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/japon.svg" alt="japones">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/polonia.svg" alt="polaco">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/china.svg" alt="chino">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/republica-checa.svg" alt="checo">
+                            </div>
+                            <div class="information__text">Idioma/Audios: 
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/espana.svg" alt="españa">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/estados-unidos-de-america.svg" alt="eeuu">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/francia.svg" alt="francia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/italia.svg" alt="italia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/portugal.svg" alt="portugal">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/rusia.svg" alt="rusia">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/alemania.svg" alt="aleman">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/japon.svg" alt="japones">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/polonia.svg" alt="polaco">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/china.svg" alt="chino">
+                                <img loading="lazy" class="information__icon information__icon--flags" src="../../../assets/icons/republica-checa.svg" alt="checo">
+                            </div>
+                            <div class="information__text">Peso:<span class="information__text--2">80 GB</span></div>
+                        </div>
+                        <div class="information__content information__content--2 col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="information__text">Disponible en: 
+                                <img loading="lazy" class=" information__icon information__icon--1" src="../../../assets/icons/steam.svg" alt="steam">
+                                <img loading="lazy" class=" information__icon information__icon--2" src="../../../assets/icons/epic_games.svg" alt="epic gamesd">
+                                <img loading="lazy" class=" information__icon information__icon--2" src="../../../assets/icons/gog.svg" alt="gog">
+                                <img loading="lazy" class=" information__icon information__icon--2" src="../../../assets/icons/origin.svg" alt="origin">
+                                <img loading="lazy" class=" information__icon information__icon--2" src="../../../assets/icons/uplay.svg" alt="uplay">
+                            </div>  
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="section__wrapper">
-                <div class="related__header">
-                    <h1 class="related__title">Juegos relacionados</h1>
-                </div>
-                <div class="related__body">
-                    <div class="related__carousel">
-                        <a class="poster" href="../../shooter/FEAR_2/index.html">
-                            <div class="poster__content">
-                                <h3 class="poster__title">F.E.A.R 2</h3>
-                            </div>
-                        </a>
-                        <a class="poster" href="../../adventure/Crash_Bandicoot_4/index.html">
-                            <div class="poster__content">
-                                <h3 class="poster__title">Crash Bandicoot 4 Its About Time</h3>
-                            </div>
-                        </a>
-                        <a class="poster" href="../../fight/Batman_Arkham_Asylum/index.html">
-                            <div class="poster__content">
-                                <h3 class="poster__title">Batman Arkham Asylum</h3>
-                            </div>
-                        </a>
-                        <a class="poster" href="../../shooter/Doom_Eternal/index.html">
-                            <div class="poster__content">
-                                <h3 class="poster__title">Doom Eternal</h3>
-                            </div>
-                        </a>
-                        <a class="poster" href="../../adventure/Little_Nightmare_II/index.html">
-                            <div class="poster__content">
-                                <h3 class="poster__title">Little Nightmare II</h3>
-                            </div>
-                        </a>
+                <div class="requirements">
+                    <div class="row requirements__header">
+                        <h1 class="requirements__title">Requisitos del juego</h1>
+                    </div>
+                    <div class="row">
+                        <div class="requirements__content requirements__content--1 col-12 col-sm-12 col-md-12 col-lg-6">
+                            <h3 class="requirements__subtitle">MINIMO:</h3>
+                            <div class="requirements__text">SO:<span class="requirements__text--2">Windows 7/10 64-bit</span></div> 
+                            <div class="requirements__text">Procesador:<span class="requirements__text--2">Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better</span></div> 
+                            <div class="requirements__text">Tarjeta :<span class="requirements__text--2">8 GB</span></div>
+                            <div class="requirements__text">Gráficos:<span class="requirements__text--2"> NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)</span></div>
+                            <div class="requirements__text">DirectX: <span class="requirements__text--2">11</span></div>
+                            <div class="requirements__text">Disco: <span class="requirements__text--2">80GB de Espacio Disponible en el Disco Duro</span></div>
+                        </div>
+                        <div class="requirements__content requirements__content--2 col-12 col-sm-12 col-md-12 col-lg-6">
+                            <h3 class="requirements__subtitle">RECOMENDADO:</h3>
+                            <div class="requirements__text">SO:<span class="requirements__text--2">Windows 10 64-bit</span></div>
+                            <div class="requirements__text">Procesador:<span class="requirements__text--2">Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better</span></div>
+                            <div class="requirements__text">Memoria:<span class="requirements__text--2">8 GB</span> </div>
+                            <div class="requirements__text">Gráficos:<span class="requirements__text--2">NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)</span></div>
+                            <div class="requirements__text">DirectX:<span class="requirements__text--2">11</span></div>
+                            <div class="requirements__text">Disco:<span class="requirements__text--2">80GB de Espacio Disponible en el Disco Duro</span></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <ul class="footer__list">
-                <li><a class="footer__link" href="#top">Ir arriba</a></li>
-                <li><a class="footer__link" href="#">Politica de Privacidad</a></li>
-                <li><a class="footer__link" href="#">Terminos y condiciones</a></li>
-                <li><a class="footer__link" href="#">Contactos</a></li>
-            </ul>
-            <div class="footer__copy"><a class="footer__link" href="../../../home.html">Copyright© 2021 Info Games</a></div>
-        </footer>
+                <div class="related">
+                    <header class="row related__header ">
+                        <h1 class="related__title">Juegos Relacionados</h1>
+                    </header>
+                    <div class="row">
+                        <div class="related__content ">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row-cols-3">
+                                            <div class=" p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                                          
+                                                    <a href="../../adventure/Ori_And_The_Will_Of_The_wisps/index.html" >
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/adventure/Ori_And_The_Will_Of_The_wisps/images/ori_and_the_will_of_the_wisps.jpg" alt="ori and the will of the wisps">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Ori And The Will Of The wisps</h1>
+                                                                <p class="card__description">Comienza un nuevo viaje por un mundo enorme y exótico.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">
+                                                    <a href="../../fight/Batman_Arkham_Asylum/index.html" >
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/fight/Batman_Arkham_Asylum/images/batman_arkham_asylum.jpg" alt="batman arkham asylum">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Batman Arkham Asylum</h1>
+                                                                <p class="card__description">Lucha y recorre un Estados Unidos pospandémico letal.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                              
+                                                    <a href="index.html">
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/shooter/Doom_Eternal/images/doom_eternal.jpg" alt="doom eternal">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Doom Eternal</h1>
+                                                                <p class="card__description">Ponte en la piel del Slayer en una épica campaña para un jugador.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row-cols-3">
+                                            <div class="p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                                          
+                                                    <a href="../../adventure/Little_Nightmare_II/index.html">
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/adventure/Little_Nightmare_II/images/Little_Nightmares_II.jpg" alt="little nightmares II">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Little Nightmares II</h1>
+                                                                <p class="card__description">Un joven atrapado en un mundo distorsionado por una malvada transmisión.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">
+                                                    <a href="../../fight/Dragon_Ball_Fighterz/index.html">
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/fight/Dragon_Ball_Fighterz/images/dragon_ball_fighterz.jpg" alt="dragon ball fighterz">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Dragon Ball Fighterz</h1>
+                                                                <p class="card__description">Luchas espectaculares e interminables con luchadores superpoderosos.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                              
+                                                    <a href="../../shooter/FEAR_2/index.html">
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/shooter/FEAR_2/images/fear2.jpg" alt="fear 2">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">F.E.A.R 2</h1>
+                                                                <p class="card__description">Tendrás el papel del Sargento Michael Becket y tu misión rutinaria se convertirá en una lucha</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row-cols-3">
+                                            <div class="row p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                                          
+                                                    <a href="../../shooter/Metro_Exodus/index.html" >
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../../games/shooter/Metro_Exodus/images/metro_exodus.jpg" alt="metro exodus">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Metro Exodus</h1>
+                                                                <p class="card__description">Huye de las ruinas devastadas del metro de Moscú y embárcate en un viaje épico.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row p-0 col-xs-4 col-sm-4">
+                                                <div class="img-fluid">                                          
+                                                    <a href="../../adventure/Crash_Bandicoot_4/index.html" >
+                                                        <div class="card col-center">
+                                                            <img loading="lazy" class="card__img" src="../../adventure/Crash_Bandicoot_4/images/Crash_Bandicoot_4_Its_About_Time.jpg" alt="crash bandicoot 4 its about time">   
+                                                            <div class="card__content">
+                                                                <h1 class="card__title">Crash Bandicoot 4 Its Crash Bandicoot 4 Its About Time</h1>
+                                                                <p class="card__description">Crash se lanza de lleno con tus marsupiales favoritos a una aventura temporal.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class=" carousel-control left" href="#myCarousel" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="  carousel-control right" href="#myCarousel" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="row d-none d-md-block d-lg-block">
+            <!-- Footer -->
+            <footer class="row col-md col-lg footer">
+                <ul class="footer__list col-md-6 col-lg-6">
+                    <li class="footer__item"><a class="footer__link" href="../../../home.html">Politica de Privacidad</a></li>
+                    <li class="footer__item"><a class="footer__link" href="../../../views/aboutus.html">Terminos y condiciones</a></li>
+                    <li class="footer__item"><a class="footer__link" href="../../../views/community.html">Contactos</a></li>
+                </ul>
+                <div class="col-md-6 col-lg-6 footer__copy"><a class="footer__link--copy" href="../../../home.html">Copyright© 2021 Info Games</a></div>
+            </footer>
+        </div>  
     </div>
+    <script src="../../../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

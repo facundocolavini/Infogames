@@ -21,6 +21,7 @@
         }
         &__link{
             color:map-get($whites, 3);
+            font-size: .8em;
         }
         &__copy{
             @include dislayPosition(f,f-end,f-end );

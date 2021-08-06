@@ -12,10 +12,12 @@ html{
 }
 body{
     font-size: 10px;
-    bottom: 0;
     position:relative;
+    bottom: 0;
     display: flex;
     justify-self: center;
+    align-items: center;
+
     font-family:$family-text;
     background: map-get($gradients,1);
     color:map-get($colors,"white");

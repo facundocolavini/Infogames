@@ -1,5 +1,6 @@
 @include media-up (xs){
     .title{
+        margin: map-get($spacers,5) map-get($spacers,1);
         font: {
             size: $font-size-base-xs;
             family:$family-title;
@@ -24,6 +25,7 @@
 }
 @include media-up(sm){
     .title{
+        margin: map-get($spacers,5) map-get($spacers,1);
         font: {
             size: $font-size-base-sm;
             family:$family-title;
@@ -71,6 +73,7 @@
 }
 @include media-up (lg){
     .title{
+        margin: map-get($spacers,5) map-get($spacers,1);
         font: {
             size: $font-size-base;
             family:$family-title;

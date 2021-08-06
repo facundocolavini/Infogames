@@ -658,19 +658,22 @@
             padding:map-get($spacers,4);
         }
         .points__header{
+    
             font: {
                 family: $family-title;
             }
             @include dislayPosition(f,s-b,f-start);
-            padding:map-get($spacers,4);
+  
             white-space: nowrap;
             letter-spacing: .1em;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .points__title{
-            font-size: 1.8em;
+            font-size: 3em;
             font-weight: 600;
+            text-align: center;
+            margin:0 auto;
         }
         .points__rating{
             margin:0 map-get($spacers,3);
@@ -688,20 +691,20 @@
         }
         .points__rating__img--start {
             margin: 0 map-get($spacers,3) ;
-            height: 2em;
-            width: 2em;
+            height: 3em;
+            width: 3em;
             filter:$shadow-drop-2;
             background-color:$box-shadow-6;
         }
         .points__rating__content{
             &--total{
                 @include dislayPosition(ib,n,n);
-                font-size: 2em;
+                font-size: 3em;
                 font-weight: 600;
             }
             &--min{
                 @include dislayPosition(ib,n,n);
-                font-size: 1.2em;
+                font-size: 2em;
                 font-weight: 400;
             }
         }
@@ -709,7 +712,7 @@
         .points__area{
             font: {
                 family: $family-text;
-                size: 1.2em;
+                size: 1.5em;
                 weight: 600;
             }
             color:map-get($colors,"white" );
@@ -718,7 +721,7 @@
             white-space: nowrap;
         }
         .points__number{
-            font-size: 1.5em;
+            font-size: 2.5em;
             font-weight:600;
         }
         .points__text{
@@ -939,8 +942,6 @@
     }
 
 }
-
-
 @include media-up(lg){
     .points{
         margin:map-get($spacers ,5) auto;
@@ -956,7 +957,7 @@
             }
         }
         .points__score{
-            background-color: map-get($grays ,1);
+            background-color: map-get($grays ,3);
             box-shadow: $box-shadow-2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
             border-radius: 1rem;
             width: 100%;
@@ -965,17 +966,22 @@
             padding: 0;
             font: {
                 family: $family-title;
+                
             }
             @include dislayPosition(f,s-b,f-start);
             margin:map-get($spacers,4);
+            padding: 0 map-get($spacers,4);
             white-space: nowrap;
             letter-spacing: .1em;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .points__title{
-            font-size: 2em;
+            font-size:2.5em;
             font-weight: 600;
+            padding: 0;
+            margin:0;
+            margin-top: map-get($spacers,4);
         }
         .points__rating{
             margin:0 map-get($spacers,3);
@@ -992,27 +998,27 @@
         }
         .points__rating__img--start {
             margin: 0 map-get($spacers,3) ;
-            height: 3em;
-            width: 3em;
+            height: 4em;
+            width: 4em;
             filter:$shadow-drop-2;
             background-color:$box-shadow-6;
         }
         .points__rating__content{
             &--total{
                 @include dislayPosition(ib,n,n);
-                font-size: 2em;
+                font-size: 3em;
                 font-weight: 600;
             }
             &--min{
                 @include dislayPosition(ib,n,n);
-                font-size: 1.2em;
+                font-size: 1.5em;
                 font-weight: 400;
             }
         }
         .points__area{
             font: {
                 family: $family-text;
-                size: 1.2em;
+                size: 1.5em;
                 weight: 600;
             }
             color:map-get($colors,"white" );
@@ -1021,7 +1027,7 @@
             white-space: nowrap;
         }
         .points__number{
-            font-size: 1.5em;
+            font-size: 3em;
             font-weight:600;
         }
         .points__text{
@@ -1205,10 +1211,6 @@
         .col-center {
             margin: 0 auto;
             float: none !important;
-        }
-        .carousel {	
-/*             margin: 30px auto 50px;
-            padding: 0 68px; */
         }
         .item {
             text-align: center;
