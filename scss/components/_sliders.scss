@@ -16,7 +16,7 @@
             object-fit: cover;
         }
     }
-    .modal{
+    .modalGallery{
         position: fixed;
         left: 0;
         top: 0;
@@ -28,7 +28,7 @@
         opacity: 0;
         pointer-events: none;
         transition: 0.25s all ease-out;
-        .modal__img{
+        .modalGallery__img{
             position:absolute;
             height: 70%;
             top:50%;
@@ -37,7 +37,7 @@
             transform: translate(-50%, -50%) scale(0.3);
             transition: all 0.25s ease-out;
         }
-        .modal__img.open{
+        .modalGallery__img.open{
             transform: translate(-50%, -50%) scale(0.4);
             box-shadow: $box-shadow-2;
             margin: 0   auto;
@@ -45,6 +45,7 @@
         &.open{
             opacity: 1;
              pointer-events: all;
+             z-index: 999;
         }
     }
 
@@ -66,7 +67,7 @@
             object-fit: cover;
         }
     }
-    .modal{
+    .modalGallery{
         position: fixed;
         left: 0;
         top: 0;
@@ -78,7 +79,7 @@
         opacity: 0;
         pointer-events: none;
         transition: 0.25s all ease-out;
-        .modal__img{
+        .modalGallery__img{
             position:absolute;
             height: 70%;
             top:50%;
@@ -87,7 +88,7 @@
             transform: translate(-50%, -50%) scale(0.5);
             transition: all 0.25s ease-out;
         }
-        .modal__img.open{
+        .modalGallery__img.open{
             transform: translate(-50%, -50%) scale(.6);
             box-shadow: $box-shadow-2;
             margin: 0   auto;
@@ -95,7 +96,7 @@
         &.open{
             opacity: 1;
             pointer-events: all;
-
+            z-index: 999;
         }
     }
 
@@ -117,7 +118,7 @@
             object-fit: cover;
         }
     }
-    .modal{
+    .modalGallery{
         position: fixed;
         left: 0;
         top: 0;
@@ -129,7 +130,7 @@
         opacity: 0;
         pointer-events: none;
         transition: 0.25s all ease-out;
-        .modal__img{
+        .modalGallery__img{
             position:absolute;
             height: 70%;
             top:50%;
@@ -139,14 +140,14 @@
             transform: translate(-50%, -50%) scale(0.5);
             transition: all 0.25s ease-out;
         }
-        .modal__img.open{
+        .modalGallery__img.open{
             transform: translate(-50%, -50%) scale(.8);
             box-shadow: $box-shadow-2;
         }
         &.open{
             opacity: 1;
             pointer-events: all;
-
+            z-index: 999;
         }
     }
 }
@@ -170,7 +171,7 @@
         }
         
     }
-    .modal{
+    .modalGallery{
         position: fixed;
         left: 0;
         top: 0;
@@ -182,7 +183,7 @@
         opacity: 0;
         pointer-events: none;
         transition: 0.25s all ease-out;
-        .modal__img{
+        .modalGallery__img{
             position:absolute;
             height: 70%;
             top:50%;
@@ -192,14 +193,14 @@
             transform: translate(-50%, -50%) scale(0.5);
             transition: all 0.25s ease-out;
         }
-        .modal__img.open{
+        .modalGallery__img.open{
             transform: translate(-50%, -50%) scale(1);
             box-shadow: $box-shadow-2;
         }
         &.open{
             opacity: 1;
             pointer-events: all;
-
+            z-index: 999;
         }
     }
 

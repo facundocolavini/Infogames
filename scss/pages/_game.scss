@@ -4,8 +4,9 @@
 
 @import 'components/buttons',
         'components/sliders',
+        'components/modal',
         'components/card';
-        
+    
 
 @include media-up(xs){
     .points{
@@ -1241,6 +1242,10 @@
     
     }
 
+
+     .show {
+        opacity: 1;
+    }
 
 
 }

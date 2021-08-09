@@ -249,15 +249,13 @@ new Glider(document.querySelector('.carousel__list--3'),{
 
 
 /* Slider Gallery */
-const modal = document.querySelector('.modal');
+const modal = document.querySelector('.modalGallery');
 const previews = document.querySelectorAll('.item__img');
 const posters = document.querySelectorAll('.poster');
-const original = document.querySelector('.modal__img');
-//Games images
-const crash = ["crash_4_1","crash_4_2","crash_4_3","crash_4_4"];
-const littleNightmareII = ["Little_Nightmares_II_1","Little_Nightmares_II_2","Little_Nightmares_II_3","Little_Nightmares_II_4"];
+const original = document.querySelector('.modalGallery__img');
 
-previews.forEach((preview,i) => {
+
+previews.forEach((preview) => {
   preview.addEventListener("click",()=>{
     modal.classList.add("open");
     original.classList.add("open");
@@ -268,9 +266,13 @@ previews.forEach((preview,i) => {
 });
 
 modal.addEventListener("click",(e)=>{
-  if(e.target.classList.contains('modal')){
+  if(e.target.classList.contains('modalGallery')){
     modal.classList.remove('open');
     original.classList.remove("open");
   }
 });  
 
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
