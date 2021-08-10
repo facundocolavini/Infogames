@@ -9,14 +9,21 @@
         position: fixed;
         z-index: 2;
         bottom:0;
+        right: 0;
+        left: 0;
         width: 100%;
+
         background-color:$box-shadow-2;
         &__ul{
+            overflow-x: hidden;
             width: 100%;
             @include dislayPosition(f,s-a,center);
-            padding:  map-get($spacers,3)  map-get($spacers,3);
+            margin: 0 1em;
+            padding: 1em 0;
+
         }
         &__item{
+            position: relative;
             width: 100%;
             margin: 0 map-get($spacers,3);
         }
@@ -24,9 +31,12 @@
             @include dislayPosition(f,s-a,center);
             margin:0;
             flex-direction: column;
+         
         }
         &__item:hover{
             @include hoverPrimary;
+ 
+            transform: scale(1);
         }
         @each $name,$icon in $icons {
             .#{$name}{
@@ -40,7 +50,7 @@
         &__text{
             font: {
                 weight:100;
-                size: map-get($font-sizes-xs,7 * $font-size-base-xs); 
+                size: 1.2em; 
             }
             text-align: center;
             color:map-get($colors,"white");

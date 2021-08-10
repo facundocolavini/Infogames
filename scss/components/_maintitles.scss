@@ -9,12 +9,12 @@
 
         &__section{
             font: {
-                size: map-get($font-sizes-xs,2);
+                size: 2.5em;
             }
         }
         &__section--low{
             font: {
-                size: map-get($font-sizes-xs,2);
+                size: 2.5em;
             }
         }
         &__section--low:hover{

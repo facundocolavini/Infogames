@@ -54,7 +54,7 @@
             color:map-get($whites,3);
             font: {
                 family:$family-text;
-                size:1.5em;
+                size:1.8em;
                 weight:500;
             }
         }
@@ -62,10 +62,9 @@
             @include dislayPosition(b,n,n);
             margin-bottom: map-get($spacers,6);
             width: fit-content;
-            width: 6em;
-            height: 6em;
+            width: 12em;
+            height: 10em;
             text-align: center;
-            margin-right: map-get($spacers,3);
         }
         .user__avatar{ 
             position: relative;
@@ -77,10 +76,9 @@
             border-radius: 50%;
             background-position: center;
             background-size: center;
-       
             object-fit: cover;
-            width: 5em;
-            height: 5em;
+            width: 10em;
+            height: 10em;
             box-shadow: $box-shadow-1;
             cursor: pointer;
         }
@@ -89,7 +87,7 @@
         }
         .user__alias{
             display: block;
-            font-size: .9em;
+            font-size: 1.5em;
             width: 100%;
             line-height: 1;
             text-transform: lowercase;
@@ -99,7 +97,7 @@
             margin-bottom: .25rem;
         }
         .user__rol{
-            font-size: 1em;
+            font-size: 1.3em;
             color:map-get($whites,3);
             overflow: hidden;
             text-overflow: ellipsis;
@@ -108,10 +106,17 @@
         .user__img--users{
             @include dislayPosition(f,center,center);
             color:map-get($whites,3);
-            width: 5em;
-            height: 5em;
-
+            width: 10em;
+            height: 10em;
+            
         }
+        .user__img--users p{
+            padding: 0 1em;
+            font-size: 1.5em;
+            font-weight: 400;
+            
+        }
+
     }    
 }
 @include media-up(sm){
