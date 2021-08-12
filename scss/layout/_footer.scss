@@ -29,9 +29,27 @@
         }
         &__link--copy{
             color:map-get($whites, 3);
+            @include dislayPosition(f,center,center );
+            .footer__img{
+                height: 3em;
+                width: 3em;
+                text-align:center;
+                line-height: 1;
+                align-content:center;
+                margin-left:map-get($spacers,3);
+            }   
         }
         &__link--copy:hover{
             @include hoverPrimary;
+            transform: scale(1.1);
+
+        }
+        .footer__text{
+            font: {
+                color:map-get($whites, 3);
+                weight:500;
+                size:1.4em;
+            }
         }
     }
 }
@@ -42,10 +60,8 @@
             family:$family-text;
             weight:400; 
         }
-        height: 4 * $font-size-base;
+        height: 5em;
         @include dislayPosition(f,center,center );
-        
-
         &__list{
             @include dislayPosition(f,f-start,center );
         }
@@ -60,13 +76,32 @@
         }
         &__copy{
             @include dislayPosition(f,f-end,f-end );
-            padding:  map-get($spacers,3)  map-get($spacers,3);
+            padding:  map-get($spacers,3)  map-get($spacers,4);
         }
         &__link--copy{
             color:map-get($whites, 3);
+            @include dislayPosition(f,center,center );
+            .footer__img{
+                height: 3em;
+                width: 3em;
+                text-align:center;
+                line-height: 1;
+                align-content:center;
+                margin-left:map-get($spacers,3);
+            }   
         }
         &__link--copy:hover{
             @include hoverPrimary;
+            transform: scale(1.1);
+
         }
+        .footer__text{
+            font: {
+                color:map-get($whites, 3);
+                weight:500;
+                size:1.4em;
+            }
+        }
+    
     }
 }
