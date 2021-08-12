@@ -35,7 +35,6 @@
         }
         &__item:hover{
             @include hoverPrimary;
- 
             transform: scale(1);
         }
         @each $name,$icon in $icons {
